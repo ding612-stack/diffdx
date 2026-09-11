@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
+  <meta name="theme-color" content="#0d233a">
+  <meta name="description" content="Academic search engine and clinical differential diagnosis engine mapping DSM psychiatric disorders to organic medical mimics.">
+  <title>Clinical Differential Diagnosis Desk Reference — Point-of-Care Portal</title>
+  
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+  <!-- Academic Database Header -->
+  <header class="portal-header">
+    <div class="portal-header-inner">
+      <div class="portal-brand">
+        <img src="assets/logo.png" alt="Psi of Asclepius" class="portal-logo-img">
+        <div class="portal-title-block">
+          <h1>Clinical &amp; Medical Differential Diagnosis Desk Reference</h1>
+          <div class="portal-subtitle">Point-of-Care Diagnostic Engine &amp; Interprofessional Referral Portal</div>
+        </div>
+      </div>
+      <div class="portal-meta-badges">
+        <span class="badge-version">DSM-5-TR / ICD-10 Aligned</span>
+        <button type="button" class="badge-disclaimer-btn" id="btn-open-disclaimer" title="View Clinical Decision Support Disclaimer">⚠️ Clinical Disclaimer</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Academic Search Section (ERIC / PubMed / PsycINFO Style) -->
+  <section class="search-hero-section">
+    <div class="search-hero-container">
+      <form id="search-form" class="search-form-wrapper" onsubmit="return false;">
+        <input 
+          type="text" 
+          id="search-input" 
+          class="search-input-field" 
+          placeholder="Search symptoms, disorders, or medical mimics (e.g. fatigue AND weight NOT thyroid)..."
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <button type="button" id="btn-clear" class="btn-clear-search" title="Clear Search" style="display: none;">✕</button>
+        <button type="submit" id="btn-submit" class="btn-search-submit">
+          <span>Search</span>
+        </button>
+      </form>
+
+      <!-- Search Syntax Hints & Chips Under Search Bar -->
+      <div class="search-hints-container">
+        <span class="hints-label">Search Hints:</span>
+        <button type="button" class="hint-chip" data-query='fatigue AND "weight loss"'>fatigue AND "weight loss"</button>
+        <button type="button" class="hint-chip" data-query='anhedonia OR insomnia NOT thyroid'>anhedonia OR insomnia NOT thyroid</button>
+        <button type="button" class="hint-chip" data-query='"panic attack" AND tachycardia'>"panic attack" AND tachycardia</button>
+        <button type="button" class="hint-chip" data-query='sym:hyperactivity AND mimic:Fragile'>sym:hyperactivity AND mimic:Fragile</button>
+        <button type="button" class="hint-chip" data-query='mimic:pheochromocytoma'>mimic:pheochromocytoma</button>
+        <button type="button" class="hint-chip" data-query='redflag:hyperthermia'>redflag:hyperthermia</button>
+        
+        <span class="search-syntax-help-toggle" id="toggle-syntax-guide">ℹ️ Boolean Syntax Guide</span>
+      </div>
+
+      <!-- Expandable Syntax Guide -->
+      <div class="search-syntax-guide" id="syntax-guide-box">
+        <strong>Boolean &amp; Fielded Query Operators Supported:</strong>
+        <div class="syntax-grid">
+          <div class="syntax-item"><code>AND</code> — Both criteria required: <em>depression AND tremor</em></div>
+          <div class="syntax-item"><code>OR</code> — Either criterion accepted: <em>insomnia OR hypersomnia</em></div>
+          <div class="syntax-item"><code>NOT</code> — Excludes mimic: <em>fatigue NOT hypothyroidism</em></div>
+          <div class="syntax-item"><code>"..."</code> — Exact phrase search: <em>"altered mental status"</em></div>
+          <div class="syntax-item"><code>sym:</code> — Search core DSM symptoms: <em>sym:anhedonia</em></div>
+          <div class="syntax-item"><code>mimic:</code> — Search medical mimic: <em>mimic:Addison</em></div>
+          <div class="syntax-item"><code>lab:</code> — Search confirmatory workup: <em>lab:cortisol</em></div>
+          <div class="syntax-item"><code>sign:</code> — Search physical exam sign: <em>sign:"Woltman sign"</em></div>
+          <div class="syntax-item"><code>icd:</code> — Search ICD code: <em>icd:F32</em> or <em>icd:6A70</em></div>
+          <div class="syntax-item"><code>redflag:</code> — Search emergency red flag: <em>redflag:rigidity</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <div class="app-container">
+    <!-- Left Facets Sidebar -->
+    <aside class="facets-sidebar">
+      <div class="facets-header">
+        <h3>Filter Database</h3>
+        <button type="button" class="btn-reset-filters" id="btn-reset-facets">Reset All</button>
+      </div>
+
+      <!-- Diagnostic Category Facet -->
+      <div class="facet-group">
+        <div class="facet-title">Diagnostic Chapter</div>
+        <select id="facet-category" class="facet-select">
+          <option value="all">All Diagnostic Chapters</option>
+        </select>
+      </div>
+
+      <!-- Medical Discipline Facet -->
+      <div class="facet-group">
+        <div class="facet-title">Medical Mimic Discipline</div>
+        <select id="facet-discipline" class="facet-select">
+          <option value="all">All Medical Disciplines</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- Right Results Stream -->
+    <main class="results-container">
+      <div class="results-meta-bar">
+        <div class="results-count-text" id="results-count-label">
+          Loading diagnostic database...
+        </div>
+      </div>
+
+      <!-- List of Result Cards -->
+      <div class="results-list" id="results-list">
+        <!-- Injected via JavaScript -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Wikipedia Monograph Modal Window -->
+  <div class="wiki-modal-backdrop" id="wiki-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="wiki-modal-window">
+      <div class="wiki-modal-topbar">
+        <div class="wiki-modal-topbar-title">
+          <span>📖 Desk Reference Monograph</span>
+        </div>
+        <button type="button" class="btn-close-modal" id="btn-close-wiki" title="Close Monograph">✕</button>
+      </div>
+      <div class="wiki-modal-scroll-area" id="wiki-modal-content">
+        <!-- Injected via wikiView.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Canonical Medical Mimic Dossier Modal -->
+  <div class="wiki-modal-backdrop" id="mimic-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="wiki-modal-window" style="max-width: 780px;">
+      <div class="wiki-modal-topbar" style="background: #1e3a5f;">
+        <div class="wiki-modal-topbar-title">
+          <span>🔬 Canonical Medical Mimic Profile</span>
+        </div>
+        <button type="button" class="btn-close-modal" id="btn-close-mimic" title="Close Profile">✕</button>
+      </div>
+      <div class="wiki-modal-scroll-area" id="mimic-modal-content" style="padding: 24px;">
+        <!-- Injected via wikiView.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Clinical Form Modal (Crisis Transfer & Consultation) -->
+  <div class="form-modal-backdrop" id="clinical-form-modal" role="dialog" aria-modal="true">
+    <div class="form-modal-container" id="clinical-form-container">
+      <!-- Injected via formDrawer.js -->
+    </div>
+  </div>
+
+  <!-- Clinical Decision Support & Terms Disclaimer Modal -->
+  <div class="wiki-modal-backdrop" id="disclaimer-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="wiki-modal-window" style="max-width: 680px;">
+      <div class="wiki-modal-topbar" style="background: #0d233a;">
+        <div class="wiki-modal-topbar-title">
+          <span>⚖️ Clinical Decision Support &amp; Educational Use Disclaimer</span>
+        </div>
+        <button type="button" class="btn-close-modal" id="btn-close-disclaimer" title="Close Disclaimer">✕</button>
+      </div>
+      <div class="wiki-modal-scroll-area" style="padding: 24px 28px;">
+        <div class="disclaimer-content-block">
+          <h3 style="color: #0f2346; margin-bottom: 8px;">Professional Reference Standards</h3>
+          <p style="font-size: 0.9rem; color: #334155; line-height: 1.55; margin-bottom: 12px;">
+            The <strong>Clinical &amp; Medical Differential Diagnosis Desk Reference PWA</strong> is an independent clinical decision-support and educational reference tool designed for licensed mental health professionals, physicians, medical trainees, and clinical researchers.
+          </p>
+          <p style="font-size: 0.9rem; color: #334155; line-height: 1.55; margin-bottom: 12px;">
+            <strong>Clinician Responsibility:</strong> Diagnostic formulations, laboratory order selection, emergency transfer directives, and treatment decisions remain the exclusive professional responsibility of the attending licensed clinician. This reference tool is designed to assist in counteracting <em>diagnostic overshadowing</em> by systematically identifying interdisciplinary medical mimics, but does not substitute for formal medical consultation, physical examination, or emergency department clearance protocols.
+          </p>
+          <p style="font-size: 0.9rem; color: #334155; line-height: 1.55; margin-bottom: 18px;">
+            <strong>Zero-PHI Privacy Guarantee:</strong> All patient data entered into the referral forms executes 100% locally within volatile browser RAM and is never stored, tracked, or transmitted across any network.
+          </p>
+          
+          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #e2e8f0; padding-top: 16px; flex-wrap: wrap; gap: 12px;">
+            <label style="font-size: 0.82rem; color: #64748b; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+              <input type="checkbox" id="chk-dont-show-disclaimer" checked>
+              <span>Do not prompt on startup</span>
+            </label>
+            <button type="button" class="btn-ctrl btn-ctrl-print" id="btn-accept-disclaimer" style="padding: 9px 24px; font-weight: 700;">
+              I Understand &amp; Accept
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="js/parser.js"></script>
+  <script src="js/searchEngine.js"></script>
+  <script src="js/wikiView.js"></script>
+  <script src="js/formDrawer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

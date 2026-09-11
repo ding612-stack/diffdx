@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#0d233a"/>
+  <rect x="64" y="64" width="384" height="384" rx="54" fill="#19385c" stroke="#0284c7" stroke-width="10"/>
+  <!-- Cross Graphic -->
+  <path d="M256 120 V392" stroke="#ffffff" stroke-width="32" stroke-linecap="round"/>
+  <path d="M150 228 H362" stroke="#ffffff" stroke-width="32" stroke-linecap="round"/>
+  <!-- Search Overlay -->
+  <circle cx="320" cy="190" r="74" fill="none" stroke="#38bdf8" stroke-width="22"/>
+  <line x1="372" y1="242" x2="430" y2="300" stroke="#38bdf8" stroke-width="22" stroke-linecap="round"/>
+</svg>

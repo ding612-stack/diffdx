@@ -1,0 +1,22 @@
+{
+  "name": "Clinical Differential Diagnosis Desk Reference",
+  "short_name": "DifferentialDx",
+  "description": "Point-of-care differential diagnosis search engine mapping standard psychiatric disorders against multidisciplinary medical mimics.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0d233a",
+  "theme_color": "#0d233a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="36" fill="#0d233a"/>
+  <rect x="24" y="24" width="144" height="144" rx="20" fill="#19385c" stroke="#0284c7" stroke-width="4"/>
+  <!-- Caduceus / Differential Cross Graphic -->
+  <path d="M96 46 V146" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M56 86 H136" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <!-- Magnifying glass lens -->
+  <circle cx="120" cy="72" r="28" fill="none" stroke="#38bdf8" stroke-width="8"/>
+  <line x1="140" y1="92" x2="162" y2="114" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/>
+</svg>

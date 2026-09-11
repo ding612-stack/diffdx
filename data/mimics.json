@@ -1,0 +1,956 @@
+[
+  {
+    "id": "hypothyroidism",
+    "name": "Hypothyroidism (Primary & Subclinical)",
+    "icd10": "E03.9",
+    "discipline": "Endocrinology",
+    "systemic_symptoms": "Profound fatigue, psychomotor slowing, cognitive slowing ('myxedema madness'), hypersomnia, weight gain, cold intolerance, constipation, dry skin, coarse hair.",
+    "physical_signs": "Delayed relaxation phase of deep tendon reflexes (Woltman sign), periorbital edema, macroglossia, bradycardia, diastolic hypertension, non-pitting pretibial myxedema.",
+    "diagnostic_workup": "Serum TSH (elevated > 4.5 mIU/L; often > 10 mIU/L in overt); Free T4 (subnormal < 0.8 ng/dL); Anti-Thyroperoxidase (anti-TPO) antibodies to assess Hashimoto's thyroiditis."
+  },
+  {
+    "id": "hyperthyroidism",
+    "name": "Hyperthyroidism / Thyrotoxicosis / Graves' Disease",
+    "icd10": "E05.00 / E05.90",
+    "discipline": "Endocrinology",
+    "systemic_symptoms": "Intense psychomotor agitation, panic-like anxiety attacks, emotional lability, insomnia, weight loss despite ravenous appetite, heat intolerance, diaphoresis, palpitations, frequent bowel movements.",
+    "physical_signs": "Fine resting hand tremor (tested with paper on outstretched hands), lid lag and stare (Dalrymple sign), exophthalmos / proptosis, resting sinus tachycardia (> 100 bpm), systolic hypertension with wide pulse pressure, diffuse goiter with vascular bruit.",
+    "diagnostic_workup": "Serum TSH (suppressed < 0.01 mIU/L); Free T4 and Total/Free T3 (markedly elevated); TSH Receptor Antibodies (TRAb / TSI) for Graves'; 24-hour radioactive iodine uptake scan."
+  },
+  {
+    "id": "cushings_syndrome",
+    "name": "Cushing's Syndrome (Hypercortisolemia)",
+    "icd10": "E24.9",
+    "discipline": "Endocrinology",
+    "systemic_symptoms": "Severe atypical depression, emotional lability, mania or hypomania, cognitive impairment ('steroid fog'), refractory insomnia, libido loss.",
+    "physical_signs": "Moon facies, dorsocervical fat pad ('buffalo hump'), central truncal obesity with thin extremities, wide purple abdominal striae (> 1 cm), proximal muscle weakness (difficulty rising from chair without arms), easy bruising, hirsutism.",
+    "diagnostic_workup": "24-hour urinary free cortisol (UFC > 3x upper limit of normal); 1 mg overnight Dexamethasone Suppression Test (serum cortisol failure to suppress < 1.8 mcg/dL at 8:00 AM); late-night salivary cortisol (elevated on 2 separate nights); ACTH level."
+  },
+  {
+    "id": "addisons_disease",
+    "name": "Addison's Disease (Primary Adrenal Insufficiency)",
+    "icd10": "E27.1",
+    "discipline": "Endocrinology",
+    "systemic_symptoms": "Apathy, severe anhedonia, refractory major depression, anorexia, salt cravings, generalized weakness, nausea, intermittent vomiting, abdominal pain.",
+    "physical_signs": "Cutaneous hyperpigmentation (palmar creases, buccal mucosa, vermilion border, scars), orthostatic hypotension (drop > 20 mmHg systolic), weight loss, vitiligo.",
+    "diagnostic_workup": "Morning serum cortisol (8:00 AM < 3 mcg/dL strongly diagnostic; < 10 highly suspicious); Cosyntropin (ACTH) stimulation test (subnormal peak cortisol < 18 mcg/dL at 30/60 min); plasma ACTH (elevated > 100 pg/mL in primary); BMP (hyponatremia + hyperkalemia)."
+  },
+  {
+    "id": "primary_hyperparathyroidism",
+    "name": "Primary Hyperparathyroidism & Hypercalcemia",
+    "icd10": "E21.0 / E83.52",
+    "discipline": "Endocrinology",
+    "systemic_symptoms": "'Bones, stones, groans, and psychiatric overtones': lethargy, psychomotor retardation, executive dysfunction, delirium, apathy, depressive psychosis, severe constipation, generalized musculoskeletal aches.",
+    "physical_signs": "Hypotonia, hyporeflexia, band keratopathy on slit-lamp, abdominal tenderness from nephrolithiasis or pancreatitis.",
+    "diagnostic_workup": "Total serum calcium (elevated > 10.5 mg/dL) and ionized calcium; Intact Parathyroid Hormone (PTH) (inappropriately elevated or high-normal in setting of hypercalcemia); 24-hour urine calcium excretion; Neck ultrasound / Sestamibi SPECT scan."
+  },
+  {
+    "id": "hypoparathyroidism",
+    "name": "Hypoparathyroidism & Hypocalcemia",
+    "icd10": "E20.9 / E83.51",
+    "discipline": "Endocrinology",
+    "systemic_symptoms": "Severe generalized anxiety, panic attacks, emotional lability, irritability, cognitive impairment, visual hallucinations, tetany.",
+    "physical_signs": "Chvostek sign (facial nerve tap produces ipsilateral facial twitching); Trousseau sign (carpopedal spasm induced by BP cuff inflated > systolic for 3 min); perioral and fingertip paresthesias; hyperreflexia; prolonged QTc on ECG.",
+    "diagnostic_workup": "Serum total calcium (< 8.5 mg/dL) corrected for albumin, or ionized calcium (< 4.6 mg/dL); serum phosphorus (elevated); intact PTH (low or undetectable); 12-lead ECG (QTc prolongation, risk of torsades de pointes)."
+  },
+  {
+    "id": "pheochromocytoma",
+    "name": "Pheochromocytoma & Paraganglioma",
+    "icd10": "C74.0 / D35.0",
+    "discipline": "Endocrinology",
+    "systemic_symptoms": "Paroxysmal catastrophic panic attacks, impending doom, episodic pounding headaches, profuse generalized sweating, palpitations, tremors, pallor during episodes.",
+    "physical_signs": "Paroxysmal severe hypertension (systolic > 180-220 mmHg during episodes) or labile BP; marked diaphoresis and skin pallor; reflex tachycardia or bradycardia; orthostatic hypotension.",
+    "diagnostic_workup": "Plasma free metanephrines and normetanephrines (supine, drawn after 30 min rest; > 3-4x ULN diagnostic); 24-hour urine fractionated metanephrines and catecholamines; Abdominal/pelvic CT or MRI with contrast; MIBG / Gallium-68 DOTATATE PET scan."
+  },
+  {
+    "id": "insulinoma_hypoglycemia",
+    "name": "Insulinoma & Reactive/Fasting Hypoglycemia",
+    "icd10": "D13.7 / E16.2",
+    "discipline": "Endocrinology",
+    "systemic_symptoms": "Neuroglycopenic psychiatric symptoms: acute confusion, bizarre behavioral automatisms, personality changes, aggression, anxiety, diaphoresis, tremors, morning grogginess / somnolence, reversible upon eating.",
+    "physical_signs": "Whipple triad: (1) symptoms consistent with hypoglycemia, (2) verified plasma glucose < 55 mg/dL during symptoms, (3) immediate resolution of symptoms following glucose ingestion. Diaphoresis, tachycardia, dilated pupils during attack.",
+    "diagnostic_workup": "Supervised 72-hour inpatient fast with serial blood draws: plasma glucose (< 55 mg/dL), concomitant elevated plasma insulin (>= 3 mcU/mL), elevated C-peptide (>= 0.6 ng/mL), elevated proinsulin; negative serum sulfonylurea screen; Pancreatic endoscopic ultrasound (EUS) / dual-phase CT."
+  },
+  {
+    "id": "acute_intermittent_porphyria",
+    "name": "Acute Intermittent Porphyria (AIP)",
+    "icd10": "E80.2",
+    "discipline": "Genetics / Metabolic",
+    "systemic_symptoms": "Severe unremitting colicky abdominal pain out of proportion to exam, acute psychosis, visual/auditory hallucinations, delirium, extreme anxiety, insomnia, precipitated by barbiturates, starvation, or sulfonamides.",
+    "physical_signs": "Tachycardia, hypertension, motor peripheral neuropathy (proximal upper extremity weakness preceding lower extremities), port-wine colored urine darkening upon UV sunlight exposure, absence of peritoneal signs on abdominal exam.",
+    "diagnostic_workup": "Spot urine porphobilinogen (PBG) during acute attack (elevated > 5-10x ULN, highly sensitive/specific); urinary delta-aminolevulinic acid (ALA); erythrocyte PBG deaminase activity; genetic testing (HMBS gene mutation)."
+  },
+  {
+    "id": "wilsons_disease",
+    "name": "Wilson's Disease (Hepatolenticular Degeneration)",
+    "icd10": "E83.01",
+    "discipline": "Genetics / Metabolic",
+    "systemic_symptoms": "Early psychiatric manifestation in 30-50% of cases: disinhibition, behavioral deterioration, explosive rage outbursts, depression, psychosis, personality changes, cognitive decline in adolescents and young adults.",
+    "physical_signs": "Kayser-Fleischer rings on slit-lamp exam (copper deposition in Descemet's membrane, golden-brown corneal rim); 'wing-beating' tremor; dysarthria; dystonia; parkinsonian rigidity; hepatosplenomegaly; spider angiomas.",
+    "diagnostic_workup": "Slit-lamp ophthalmologic exam (K-F rings); Serum ceruloplasmin (< 20 mg/dL, often < 10); 24-hour urinary copper excretion (elevated > 100 mcg/24h, or > 40 in children); Liver biopsy with quantitative copper (> 250 mcg/g dry weight); ATP7B gene mutation analysis."
+  },
+  {
+    "id": "hemochromatosis",
+    "name": "Hereditary Hemochromatosis",
+    "icd10": "E83.110",
+    "discipline": "Genetics / Metabolic",
+    "systemic_symptoms": "Severe chronic fatigue, lethargy, apathy, depression, loss of libido, erectile dysfunction, joint pain.",
+    "physical_signs": "'Bronze diabetes': slate-gray to bronze skin hyperpigmentation, hepatomegaly, second and third metacarpophalangeal (MCP) arthropathy, testicular atrophy, signs of heart failure.",
+    "diagnostic_workup": "Fasting serum transferrin saturation (elevated > 45-50%); serum ferritin (markedly elevated > 300 ng/mL in men, > 200 in women; often > 1000 ng/mL); HFE gene testing (homozygous C282Y or compound C282Y/H63D); Liver MRI (iron overload quantification)."
+  },
+  {
+    "id": "hyponatremia_siadh",
+    "name": "Hyponatremia & SIADH",
+    "icd10": "E87.1 / E22.5",
+    "discipline": "Metabolic / Renal",
+    "systemic_symptoms": "Lethargy, headache, confusion, progressive cognitive dulling, psychotic agitation, delusions, ataxia, nausea, seizures and coma when serum Na drops rapidly < 120 mEq/L.",
+    "physical_signs": "Euvolemic status (no peripheral edema, normal JVP, moist mucous membranes), gait instability, hyporeflexia, asterixis, Cheyne-Stokes respiration in severe states.",
+    "diagnostic_workup": "Serum sodium (< 135 mEq/L; acute severe < 120); Serum osmolality (< 275 mOsm/kg); Urine osmolality (inappropriately concentrated > 100 mOsm/kg); Urine sodium (> 20-40 mEq/L with normal salt/water intake); Normal thyroid (TSH) and adrenal (cortisol) function."
+  },
+  {
+    "id": "adult_phenylketonuria",
+    "name": "Adult Phenylketonuria (PKU)",
+    "icd10": "E70.0",
+    "discipline": "Genetics / Metabolic",
+    "systemic_symptoms": "Executive dysfunction, severe agoraphobia, treatment-refractory depression, panic disorder, profound inattention, emotional lability following dietary relaxation of phenylalanine restriction.",
+    "physical_signs": "Eczematous skin rashes, hypopigmentation (fair skin and light eyes compared to family), brisk tendon reflexes, resting tremor, microcephaly (if congenital), mousy/musty body odor.",
+    "diagnostic_workup": "Quantitative plasma amino acid analysis demonstrating elevated plasma phenylalanine (> 360-600 umol/L; normal < 120 umol/L); phenylalanine-to-tyrosine ratio (> 3:1); PAH gene sequencing."
+  },
+  {
+    "id": "late_onset_urea_cycle",
+    "name": "Late-Onset Urea Cycle Disorder (OTC Deficiency)",
+    "icd10": "E72.20",
+    "discipline": "Genetics / Metabolic",
+    "systemic_symptoms": "Episodic acute delirium, combativeness, hallucinations, bizarre behavior, cyclic vomiting, postpartum psychosis, triggered by high-protein meals, fasting, or acute infection.",
+    "physical_signs": "Asterixis, episodic ataxia, fluctuating lethargy to stupor, tachypnea (central hyperventilation), absence of chronic liver cirrhosis signs.",
+    "diagnostic_workup": "Plasma ammonia level (elevated > 80-150 umol/L on unhemolyzed iced arterial/free-flowing venous specimen); Arterial blood gas (respiratory alkalosis from hyperventilation); Plasma amino acids (low citrulline, elevated glutamine); Urine orotic acid (markedly elevated in OTC deficiency); Genetic testing."
+  },
+  {
+    "id": "temporal_lobe_epilepsy",
+    "name": "Temporal Lobe Epilepsy / Focal Aware Seizures",
+    "icd10": "G40.209",
+    "discipline": "Neurology",
+    "systemic_symptoms": "Episodic paroxysmal panic, sudden dread or terror, rising epigastric sensation ('butterflies'), olfactory/gustatory hallucinations (burnt rubber, metallic taste), déjà vu / jamais vu, micropsia/macropsia, transient depersonalization.",
+    "physical_signs": "Stereotyped behavioral automatisms (lip smacking, swallowing, chewing, repetitive manual fumbling), postictal speech arrest or paraphasias, transient postictal confusion (lasting 5-15 minutes).",
+    "diagnostic_workup": "Prolonged Video-EEG monitoring with anterior temporal and anterior zygomatic electrodes (showing anterior temporal sharp waves or focal slowing); High-resolution epilepsy protocol Brain MRI (identifying hippocampal sclerosis, cortical dysplasia, or mesial temporal atrophy)."
+  },
+  {
+    "id": "frontal_lobe_epilepsy",
+    "name": "Frontal Lobe Epilepsy (Nocturnal Hypermotor)",
+    "icd10": "G40.209",
+    "discipline": "Neurology",
+    "systemic_symptoms": "Abrupt, violent nocturnal arousals misdiagnosed as panic disorder, night terrors, or REM sleep behavior disorder; brief daytime episodic rage or explosive behavioral outburst.",
+    "physical_signs": "Bizarre hypermotor automatisms (bicycling leg movements, pelvic thrusting, flailing, grimacing, vocalizations), brief duration (< 30-60 seconds), abrupt termination with minimal or no postictal confusion.",
+    "diagnostic_workup": "Overnight Polysomnography with continuous synchronous 32-channel video-EEG (differentiating from parasomnia); Brain MRI 3T with thin volumetric coronal T1/FLAIR cuts."
+  },
+  {
+    "id": "pediatric_absence_epilepsy",
+    "name": "Childhood Absence Epilepsy",
+    "icd10": "G40.A09",
+    "discipline": "Neurology / Pediatrics",
+    "systemic_symptoms": "Frequent, abrupt 5-15 second lapses of responsiveness, staring blankly, misdiagnosed as ADHD inattentive presentation or daydreaming in school; school performance decline.",
+    "physical_signs": "Sudden arrest of all ongoing motor activity, mild eyelid fluttering or myoclonic twitches, immediate resumption of pre-ictal activity with zero postictal confusion; reliably provoked in-office by 3 minutes of hyperventilation.",
+    "diagnostic_workup": "Routine EEG with hyperventilation and intermittent photic stimulation demonstrating classic synchronous, symmetric 3-Hz generalized spike-and-wave discharges."
+  },
+  {
+    "id": "multiple_sclerosis",
+    "name": "Multiple Sclerosis / Demyelinating Disease",
+    "icd10": "G35",
+    "discipline": "Neurology",
+    "systemic_symptoms": "Profound pathologic fatigue out of proportion to exertion, major depressive episodes (preceding motor signs in 20-40%), emotional lability / pseudobulbar affect (pathologic laughing/crying), cognitive 'brain fog'.",
+    "physical_signs": "Lhermitte sign (electric shock sensation radiating down spine upon neck flexion); Uhthoff phenomenon (worsening of neurological symptoms with heat/fever/hot shower); optic neuritis (unilateral painful vision loss, relative afferent pupillary defect / Marcus Gunn pupil); internuclear ophthalmoplegia (INO); hyperreflexia, extensor plantar responses (positive Babinski).",
+    "diagnostic_workup": "Brain and Spine MRI with gadolinium (periventricular Dawson fingers, juxtacortical, infratentorial, and spinal cord demyelinating lesions meeting McDonald criteria for dissemination in space and time); Lumbar puncture with CSF analysis (presence of >= 2 unique CSF oligoclonal bands and elevated IgG index)."
+  },
+  {
+    "id": "normal_pressure_hydrocephalus",
+    "name": "Normal Pressure Hydrocephalus (NPH)",
+    "icd10": "G91.2",
+    "discipline": "Neurology",
+    "systemic_symptoms": "Hakim-Adams Triad ('wobbly, wet, and wacky'): Progressive psychomotor slowing, apathy, frontal subcortical executive cognitive impairment misdiagnosed as major depression or primary dementia.",
+    "physical_signs": "Magnetic gait ataxia (shuffling, wide-based, feet glued to floor, difficulty with turns); early urinary urgency progressing to frank urge incontinence; frontal release signs (palmomental, grasp reflexes).",
+    "diagnostic_workup": "Brain MRI/CT (ventriculomegaly out of proportion to sulcal enlargement, Evans index > 0.30, narrow callosal angle, periventricular hyperintensity); High-volume CSF tap test (removal of 30-50 mL CSF via LP) demonstrating objective improvement in gait speed/cadence within 2-4 hours."
+  },
+  {
+    "id": "frontotemporal_dementia",
+    "name": "Frontotemporal Lobar Degeneration (Behavioral Variant FTD)",
+    "icd10": "G31.09",
+    "discipline": "Neurology",
+    "systemic_symptoms": "Early profound personality changes in patients aged 45-65: disinhibition (inappropriate sexual remarks, shoplifting), apathy, loss of empathy/sympathy, hyperorality (craving sweets, binge eating, putting inedible objects in mouth), compulsive stereotyped rituals.",
+    "physical_signs": "Frontal release signs (primitive reflexes: grasp, root, snout reflexes); parkinsonian rigidity in advanced stages; striking preservation of visuospatial skills despite profound executive decay.",
+    "diagnostic_workup": "Brain MRI/CT volumetric analysis demonstrating asymmetric frontal and/or anterior temporal lobe atrophy; Fluorodeoxyglucose (FDG) PET scan showing anterior frontal and temporal hypometabolism; Standardized neuropsychological testing (differentiating from Alzheimer's disease)."
+  },
+  {
+    "id": "lewy_body_dementia",
+    "name": "Dementia with Lewy Bodies (DLB)",
+    "icd10": "G31.83",
+    "discipline": "Neurology",
+    "systemic_symptoms": "Spontaneous, recurrent, well-formed visual hallucinations (detailed people, animals, children) perceived with clarity; fluctuating cognition and attention (striking day-to-day variability); REM sleep behavior disorder (acting out dreams, punching, kicking years prior to cognitive decline).",
+    "physical_signs": "Spontaneous parkinsonism (bradykinesia, cogwheel rigidity, postural instability, hypomimia, occurring concurrently or within 1 year of cognitive decline); extreme neuroleptic sensitivity (severe worsening of parkinsonism, catatonia, or neuroleptic malignant syndrome when exposed to first- or second-generation antipsychotics); orthostatic hypotension.",
+    "diagnostic_workup": "Clinical diagnostic criteria (McKeith 2017); Dopamine Transporter (DaT) SPECT scan (showing reduced striatal dopamine transporter uptake); 123I-MIBG myocardial scintigraphy (showing reduced cardiac sympathetic innervation); Overnight Polysomnography (loss of REM muscle atonia)."
+  },
+  {
+    "id": "huntingtons_disease",
+    "name": "Huntington's Disease",
+    "icd10": "G10",
+    "discipline": "Neurology / Genetics",
+    "systemic_symptoms": "Psychiatric prodrome often precedes motor symptoms by 5-10 years: profound irritability, impulsive aggression, severe major depression, high suicide risk, apathy, obsessive-compulsive symptoms, paranoia.",
+    "physical_signs": "Choreiform movements (involuntary, jerky, non-stereotyped movements of fingers, face, gait); motor impersistence (inability to sustain tongue protrusion / 'milkmaid's grip'); saccadic eye movement slowing; abnormal tandem gait.",
+    "diagnostic_workup": "Targeted genetic testing: HTT gene analysis showing CAG trinucleotide repeat expansion (>= 36 repeats abnormal; >= 40 full penetrance); Brain MRI showing bilateral caudate head atrophy with frontal horn ventricular enlargement."
+  },
+  {
+    "id": "anti_nmda_encephalitis",
+    "name": "Anti-NMDA Receptor Encephalitis",
+    "icd10": "G04.81",
+    "discipline": "Neurology / Neuro-immunology",
+    "systemic_symptoms": "Multi-stage illness in young adults/children (75% female): viral prodrome followed by explosive acute psychosis, bizarre delusions, catatonia, agitation, mutism, memory loss, emotional lability.",
+    "physical_signs": "Orofacial-lingual dyskinesias (chewing, lip-smacking, tongue writhing); choreoathetoid limb movements; autonomic instability (hyperthermia, blood pressure lability, sinus tachycardia/bradycardia); hypoventilation requiring mechanical ventilation; seizures.",
+    "diagnostic_workup": "CSF and serum anti-GluN1 (NR1) NMDA receptor antibody testing (CSF sensitivity 100%, higher than serum); Lumbar puncture (lymphocytic pleocytosis, elevated protein, CSF oligoclonal bands); Pelvic ultrasound / MRI / whole-body CT (screening for underlying ovarian teratoma in 40-50% of adult females); Continuous EEG ('extreme delta brush' pattern)."
+  },
+  {
+    "id": "creutzfeldt_jakob_disease",
+    "name": "Creutzfeldt-Jakob Disease (Prion Encephalopathy)",
+    "icd10": "A81.00",
+    "discipline": "Neurology",
+    "systemic_symptoms": "Rapidly progressive dementia over weeks to months, psychiatric early symptoms (depression, anxiety, psychosis, emotional lability, insomnia, bizarre behavior), rapid death (median survival 4-6 months).",
+    "physical_signs": "Startle myoclonus (loud clapping or sudden touch produces violent generalized myoclonic jerk); cerebellar ataxia; visual field deficits or cortical blindness; extrapyramidal and pyramidal signs; akinetic mutism in terminal state.",
+    "diagnostic_workup": "CSF Real-Time Quaking-Induced Conversion (RT-QuIC) (sensitivity > 90%, specificity ~99-100%); CSF 14-3-3 protein and elevated tau; Brain MRI Diffusion-Weighted Imaging (DWI) showing 'cortical ribboning' and hyperintensity in caudate/putamen ('hockey-stick sign'); Routine EEG showing periodic sharp-wave complexes (PSWC) at 1 Hz."
+  },
+  {
+    "id": "chronic_subdural_hematoma",
+    "name": "Chronic Subdural Hematoma",
+    "icd10": "I62.00",
+    "discipline": "Neurology / Neurosurgery",
+    "systemic_symptoms": "Subacute cognitive decline, apathy, somnolence, confusion, depressive withdrawal, headache, following trivial head trauma weeks prior (often forgotten, particularly in elderly or alcohol-dependent patients).",
+    "physical_signs": "Fluctuating level of consciousness, mild contralateral hemiparesis, asymmetric deep tendon reflexes, pronator drift, papilledema.",
+    "diagnostic_workup": "Non-contrast Brain CT (crescent-shaped, hypodense to isodense extra-axial fluid collection crossing suture lines, with mass effect/sulcal effacement); Brain MRI with T1/T2/FLAIR."
+  },
+  {
+    "id": "intracranial_mass_meningioma",
+    "name": "Intracranial Neoplasm (Frontal Meningioma / Glioma)",
+    "icd10": "D32.9 / C71.9",
+    "discipline": "Neurology / Oncology",
+    "systemic_symptoms": "Insidious onset of personality change, emotional flattening, abulia, executive dysfunction, disinhibition, or late-onset first-break psychosis in middle-aged/older adults.",
+    "physical_signs": "Foster Kennedy syndrome (ipsilateral optic atrophy + contralateral papilledema + ipsilateral anosmia); focal motor deficits; hyperreflexia; progressive morning headaches with vomiting.",
+    "diagnostic_workup": "Brain MRI with and without gadolinium (extra-axial dural tail mass enhancing homogeneously for meningioma, or intra-axial ring-enhancing lesion for glioblastoma/metastasis); Fundoscopic exam."
+  },
+  {
+    "id": "narcolepsy",
+    "name": "Narcolepsy Type 1 & Type 2",
+    "icd10": "G47.419 / G47.411",
+    "discipline": "Sleep Medicine / Neurology",
+    "systemic_symptoms": "Severe chronic daytime sleepiness, irresistible sleep attacks, hypnagogic/hypnopompic hallucinations (vivid terrifying dream imagery upon falling asleep or waking, misdiagnosed as psychotic hallucinations), sleep paralysis.",
+    "physical_signs": "Cataplexy (in Type 1: sudden bilateral loss of muscle tone triggered by strong positive emotions such as laughter, joke-telling, surprise, causing knee buckling, jaw dropping, head dropping, with preserved consciousness).",
+    "diagnostic_workup": "Overnight Polysomnography (ruling out OSA) followed immediately by Daytime Multiple Sleep Latency Test (MSLT): mean sleep latency <= 8 minutes and presence of >= 2 Sleep-Onset REM Periods (SOREMPs); CSF hypocretin-1 (orexin-A) level (undetectable or <= 110 pg/mL diagnostic for Type 1); HLA-DQB1*06:02 typing."
+  },
+  {
+    "id": "pediatric_obstructive_sleep_apnea",
+    "name": "Pediatric Obstructive Sleep Apnea (OSA)",
+    "icd10": "G47.33",
+    "discipline": "Pediatrics / Sleep Medicine",
+    "systemic_symptoms": "Severe daytime motor hyperactivity, inattention, impulsivity, emotional lability, aggression, morning headaches, school failure, highly mimicking ADHD.",
+    "physical_signs": "Tonsillar and adenoidal hypertrophy (Brodsky grade 3-4+), chronic mouth-breathing, 'adenoid facies' (narrow high-arched palate, elongated face, retrognathia), restless thrashing during sleep, loud nightly snoring with witnessed gasps, nocturnal enuresis.",
+    "diagnostic_workup": "Pediatric Overnight Polysomnography (Apnea-Hypopnea Index [AHI] >= 1 event/hour diagnostic in children); ENT examination / flexible nasopharyngoscopy."
+  },
+  {
+    "id": "neurosyphilis",
+    "name": "Neurosyphilis / General Paresis of the Insane",
+    "icd10": "A52.17",
+    "discipline": "Infectious Disease",
+    "systemic_symptoms": "'The Great Imitator': Grandiose delusions, acute mania, severe progressive dementia, personality disintegration, emotional lability, paranoia, hallucinations, depression.",
+    "physical_signs": "Argyll Robertson pupils ('prostitute's pupils': bilaterally small, irregular pupils that accommodate to near vision but do NOT react to direct light); sensory ataxia, loss of vibration/proprioception (tabes dorsalis), Romberg sign, hyperreflexia, slurred dysarthric speech.",
+    "diagnostic_workup": "Serum treponemal antibody tests (Treponema pallidum particle agglutination [TP-PA], FTA-ABS, or syphilis EIA) and non-treponemal titers (RPR or VDRL); Lumbar puncture indicated if serum is reactive: CSF-VDRL (highly specific), CSF WBC count (> 5/uL), CSF protein (> 45 mg/dL)."
+  },
+  {
+    "id": "lyme_neuroborreliosis",
+    "name": "Lyme Neuroborreliosis (Borrelia burgdorferi)",
+    "icd10": "A69.22",
+    "discipline": "Infectious Disease",
+    "systemic_symptoms": "Profound fatigue, migratory arthralgias, severe cognitive 'brain fog' (memory/processing deficits), depression, sleep disturbances, anxiety, irritability, sensory radiculopathies.",
+    "physical_signs": "History of erythema migrans ('bull's-eye' target rash); peripheral facial nerve palsy (Bannwarth syndrome / cranial nerve VII palsy, frequently bilateral); painful radiculoneuritis; large joint oligoarthritis (especially knee swelling).",
+    "diagnostic_workup": "Standard Two-Tier Testing: (1) Serum EIA/ELISA screening, followed reflexively by (2) Western blot IgG and IgM (CDC criteria: >= 5 IgG bands or >= 2 IgM bands within 30 days); Lumbar puncture with intrathecal Borrelia antibody index (CSF-to-serum antibody index > 1.3 confirming CNS neuroborreliosis)."
+  },
+  {
+    "id": "hiv_neurocognitive_disorder",
+    "name": "HIV-Associated Neurocognitive Disorder (HAND)",
+    "icd10": "B20 / F02.80",
+    "discipline": "Infectious Disease",
+    "systemic_symptoms": "Subcortical cognitive decline: psychomotor slowing, apathy, social withdrawal, impaired attention and memory retrieval, executive dysfunction, depressive symptoms, loss of behavioral drive.",
+    "physical_signs": "Impaired rapid alternating movements (dysdiadochokinesia), saccadic pursuit slowing, tremor, hyperreflexia, frontal release signs, generalized weight loss, oral candidiasis/leukoplakia.",
+    "diagnostic_workup": "HIV-1/2 4th-generation antigen/antibody combination immunoassay; Plasma HIV RNA viral load and CD4+ T-lymphocyte count; Comprehensive neuropsychological evaluation demonstrating impairment in >= 2 cognitive domains; Brain MRI (diffuse cerebral atrophy, symmetric patchy non-enhancing white matter hyperintensities on T2/FLAIR); Lumbar puncture (ruling out opportunistic cryptococcal, JC virus PML, CMV infections)."
+  },
+  {
+    "id": "systemic_lupus_erythematosus",
+    "name": "Systemic Lupus Erythematosus (CNS Lupus / Lupus Cerebritis)",
+    "icd10": "M32.10",
+    "discipline": "Rheumatology / Autoimmune",
+    "systemic_symptoms": "Neuropsychiatric SLE (NPSLE): acute lupus psychosis (delusions, auditory hallucinations), delirium, severe major depression, anxiety, cognitive dysfunction, mania.",
+    "physical_signs": "Malar 'butterfly' facial rash sparing nasolabial folds, discoid skin plaques, photosensitivity, non-scarring alopecia, painless oral/nasopharyngeal ulcers, symmetric inflammatory polyarthritis, Raynaud phenomenon, serositis (pleural/pericardial friction rub).",
+    "diagnostic_workup": "Antinuclear Antibodies (ANA) (sensitive > 98%); Anti-dsDNA (highly specific for SLE); Anti-Smith (anti-Sm) antibodies; Complement levels (depressed C3 and C4 indicating active disease flare); Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin); Brain MRI (small hyperintense subcortical white matter lesions)."
+  },
+  {
+    "id": "pandas_pans",
+    "name": "PANDAS / PANS (Pediatric Autoimmune Encephalopathy)",
+    "icd10": "G04.81",
+    "discipline": "Pediatrics / Immunology",
+    "systemic_symptoms": "Explosive, overnight onset of dramatic obsessive-compulsive behaviors (severe contamination obsessions, washing rituals) or debilitating vocal/motor tics following Group A Streptococcal or viral infection; extreme separation anxiety; emotional lability; personality regression.",
+    "physical_signs": "Choreiform movements (piano-playing finger movements on outstretched hands); sudden deterioration in handwriting/fine motor dysgraphia; sensory amplifications (clothing tags unbearable); urinary urgency/enuresis.",
+    "diagnostic_workup": "Rapid Strep antigen throat swab and throat culture; Anti-streptolysin O (ASO) and Anti-DNase B titers (elevated or rising 4-fold over acute-to-convalescent phases); Comprehensive pediatric autoimmune workup ruling out Sydenham chorea, Wilson's disease, and SLE."
+  },
+  {
+    "id": "celiac_disease_encephalopathy",
+    "name": "Celiac Disease & Gluten Ataxia / Encephalopathy",
+    "icd10": "K90.0",
+    "discipline": "Gastroenterology / Immunology",
+    "systemic_symptoms": "Treatment-resistant depression, severe brain fog, anxiety, irritability, chronic fatigue, headaches, with or without overt gastrointestinal distress.",
+    "physical_signs": "Dermatitis herpetiformis (intensely pruritic papulovesicular eruption over extensor surfaces of elbows, knees, buttocks); sensory ataxia; peripheral neuropathy; iron-deficiency anemia refractory to oral iron; aphthous stomatitis.",
+    "diagnostic_workup": "Serum Tissue Transglutaminase IgA (tTG-IgA) alongside total serum IgA (to rule out selective IgA deficiency); Deamidated gliadin peptide (DGP) IgG/IgA; Upper endoscopy with duodenal bulb and distal duodenal biopsies (demonstrating villous atrophy, crypt hyperplasia, intraepithelial lymphocytosis - Marsh score 3)."
+  },
+  {
+    "id": "corticosteroid_psychosis",
+    "name": "Corticosteroid-Induced Mood & Psychotic Disorder",
+    "icd10": "T38.0X5A",
+    "discipline": "Toxicology / Pharmacology",
+    "systemic_symptoms": "Acute onset of euphoria, grandiosity, agitation, flight of ideas, mania, severe insomnia, progressing to paranoid delusions, depersonalization, or severe suicidal depression, following initiation or dose escalation of prednisone, dexamethasone, or methylprednisolone.",
+    "physical_signs": "Facial plethora, elevated blood pressure, peripheral edema, hyperglycemia, thin skin, recent prescription history (dose usually >= 40 mg prednisone equivalent/day, though can occur at lower doses).",
+    "diagnostic_workup": "Comprehensive medication audit confirming corticosteroid administration timeline; Blood glucose check (steroid-induced hyperglycemia); Electrolytes; Resolution or dramatic improvement following steroid taper or adjunctive low-dose atypical antipsychotic."
+  },
+  {
+    "id": "anticholinergic_toxicity",
+    "name": "Anticholinergic Toxicity / Toxidrome",
+    "icd10": "T44.3X1A",
+    "discipline": "Toxicology",
+    "systemic_symptoms": "'Mad as a hatter': Agitated delirium, visual/tactile hallucinations (picking at invisible objects or clothing - liliputian hallucinations, floccillation), mumbling speech, severe disorientation, acute anxiety.",
+    "physical_signs": "'Blind as a bat' (mydriasis, non-reactive dilated pupils, blurred vision), 'Hot as a hare' (hyperthermia), 'Red as a beet' (cutaneous vasodilation, flushed skin), 'Dry as a bone' (anhidrosis, dry axillae and mucous membranes), 'Full as a flask' (urinary retention, absent bowel sounds / paralytic ileus), resting sinus tachycardia (> 120 bpm).",
+    "diagnostic_workup": "Clinical toxidrome recognition; Bladder scan (demonstrating massive urinary retention > 500-1000 mL); ECG (sinus tachycardia, ruling out QRS widening from TCA sodium-channel blockade); Serum drug screen (diphenhydramine, tricyclic antidepressants, scopolamine, benztropine, atropine, atypical antipsychotics); Response to physostigmine diagnostic challenge in severe refractory delirium."
+  },
+  {
+    "id": "serotonin_syndrome",
+    "name": "Serotonin Syndrome / Toxicity",
+    "icd10": "T43.205A",
+    "discipline": "Toxicology / Pharmacology",
+    "systemic_symptoms": "Rapid-onset agitation, restlessness, emotional excitement, confusion, delirium, diaphoresis, shivering, occurring within 24 hours of initiating or increasing serotonergic medications or drug-drug combinations (e.g., SSRI + MAOI, tramadol, linezolid, dextromethorphan, triptans, MDMA).",
+    "physical_signs": "Hunter Serotonin Toxicity Criteria: Spontaneous clonus, inducible clonus with agitation/diaphoresis, ocular flutter / ocular clonus, tremor and hyperreflexia (markedly pronounced in lower extremities), bilateral extensor plantar responses, hyperthermia (can exceed 41.1 C / 106 F in severe cases), autonomic lability (tachycardia, tachypnea, labile BP).",
+    "diagnostic_workup": "Hunter Criteria assessment (more sensitive and specific than Sternbach criteria); Serum creatine kinase (CK) (elevated in severe muscle rigidity); Comprehensive urine drug screen; Complete blood count (ruling out infection); Arterial blood gas (metabolic acidosis in severe cases)."
+  },
+  {
+    "id": "neuroleptic_malignant_syndrome",
+    "name": "Neuroleptic Malignant Syndrome (NMS)",
+    "icd10": "G21.0",
+    "discipline": "Pharmacology / Neurology",
+    "systemic_symptoms": "Progressive encephalopathy, mutism, catatonic stupor, delirium, occurring over 1-3 days following exposure to dopamine receptor antagonists (antipsychotics, metoclopramide) or abrupt withdrawal of dopamine agonists (levodopa, amantadine).",
+    "physical_signs": "'Lead-pipe' generalized muscular rigidity (diffuse hypertonicity without clonus); severe hyperthermia (temperature often > 38.0-40.0 C / 100.4-104 F); autonomic storm (profuse diaphoresis, resting sinus tachycardia, labile hypertension, tachypnea, sialorrhea, incontinence).",
+    "diagnostic_workup": "Serum Creatine Kinase (CK) markedly elevated (> 1,000 to > 50,000 U/L from rhabdomyolysis); Complete Blood Count (leukocytosis 10,000-40,000/uL with left shift); Comprehensive Metabolic Panel (elevated BUN/creatinine from myoglobinuric acute kidney injury, hyperkalemia); Serum myoglobin and urinalysis (urine dipstick positive for blood with negative RBCs on microscopy indicating myoglobinuria)."
+  },
+  {
+    "id": "stimulant_toxicity",
+    "name": "Stimulant Intoxication & Amphetamine Psychosis",
+    "icd10": "T43.621A / F15.159",
+    "discipline": "Toxicology / Addiction",
+    "systemic_symptoms": "Paranoid delusions, persecutory ideation, visual, tactile ('crank bugs' / formication), and auditory hallucinations, extreme psychomotor agitation, hypervigilance, grandiosity, violent or erratic behavior.",
+    "physical_signs": "Sympathomimetic toxidrome: severe mydriasis (dilated pupils reactive to light), diaphoresis, tachycardia, hypertension, bruxism, motor restlessness, skin excoriations from picking (delusional parasitosis).",
+    "diagnostic_workup": "Urine Drug Screen (UDS) for amphetamines, methamphetamines, MDMA, cocaine; 12-lead ECG (evaluating myocardial ischemia, QTc prolongation, dysrhythmias); Serum troponin; Serum CK (evaluating rhabdomyolysis)."
+  },
+  {
+    "id": "chronic_lead_toxicity",
+    "name": "Chronic Lead Encephalopathy (Plumbism)",
+    "icd10": "T56.0X1A",
+    "discipline": "Toxicology / Environmental",
+    "systemic_symptoms": "In children: profound inattention, developmental regression, hyperactivity, aggression, loss of IQ points, pica. In adults: depression, severe irritability, memory loss, insomnia, headache, diffuse abdominal colic.",
+    "physical_signs": "Burton line (bluish-purple line along gingival margins); peripheral motor neuropathy ('wrist drop' or 'foot drop' due to radial/peroneal nerve demyelination); microcytic anemia; pallor.",
+    "diagnostic_workup": "Whole blood lead level (BLL) (CDC reference level >= 3.5 mcg/dL in children; > 20-40 mcg/dL in adults); Erythrocyte protoporphyrin (ZPP); Peripheral blood smear demonstrating classic *basophilic stippling* of erythrocytes; Long bone X-rays in children showing radiodense 'lead bands' at metaphyses."
+  },
+  {
+    "id": "carbon_monoxide_toxicity",
+    "name": "Carbon Monoxide Neurotoxicity & Delayed Sequelae",
+    "icd10": "T58.01XA",
+    "discipline": "Toxicology",
+    "systemic_symptoms": "Acute: 'flu-like' headache, dizziness, nausea, confusion. Delayed Post-Hypoxic Leukoencephalopathy (occurring 2-40 days after recovery from acute exposure): dramatic cognitive deterioration, apathy, parkinsonism, psychosis, urinary incontinence, personality changes.",
+    "physical_signs": "'Cherry-red' lips (rare, late sign); retinal hemorrhages; parkinsonian rigidity; gait apraxia; masked facies.",
+    "diagnostic_workup": "Venous or arterial carboxyhemoglobin (COHb) level (elevated > 3-5% in non-smokers; > 10% in smokers; > 15-20% in toxic exposure); Brain MRI (showing classic bilateral symmetrical T2/FLAIR hyperintensities in the globus pallidus and cerebral white matter)."
+  },
+  {
+    "id": "alcohol_withdrawal_delirium",
+    "name": "Alcohol Withdrawal Delirium (Delirium Tremens)",
+    "icd10": "F10.231",
+    "discipline": "Addiction Medicine / Critical Care",
+    "systemic_symptoms": "Severe agitated delirium, confusion, intense terror, visual/tactile hallucinations (zoopsia: swarming insects, small animals), insomnia, occurring 48-96 hours after reduction or cessation of heavy alcohol intake.",
+    "physical_signs": "Gross coarse resting and intention tremor, severe autonomic hyperarousal (profuse diaphoresis, resting tachycardia > 120 bpm, systolic hypertension > 160-180 mmHg, tachypnea), hyperthermia, mydriasis, seizures (withdrawal seizures peak 12-48 hours).",
+    "diagnostic_workup": "CIWA-Ar score (> 15-20 indicating severe withdrawal); Blood alcohol concentration (BAC); BMP (electrolyte wasting: hypokalemia, hypomagnesemia, hypophosphatemia); Liver function tests (AST/ALT ratio > 2:1); Serum CK; Urine tox screen."
+  },
+  {
+    "id": "hepatic_encephalopathy",
+    "name": "Hepatic Encephalopathy (Portosystemic Shunting)",
+    "icd10": "K76.82",
+    "discipline": "Gastroenterology / Hepatology",
+    "systemic_symptoms": "West Haven Grade 1-4: subtle personality changes, inversion of sleep-wake cycle (daytime somnolence, nocturnal wakefulness), euphoria or depression, apathy, confusion, progressing to stupor.",
+    "physical_signs": "Asterixis (flapping tremor elicited on wrist dorsiflexion with outstretched arms); fetor hepaticus (musty, sweet breath odor); stigmata of chronic liver disease (spider telangiectasias, palmar erythema, caput medusae, jaundice, ascites, bilateral lower extremity edema).",
+    "diagnostic_workup": "Venous or arterial blood ammonia level (elevated, drawn without tourniquet on ice); Liver panel (elevated total bilirubin, prolonged prothrombin time / INR > 1.5, hypoalbuminemia); Abdominal ultrasound / Doppler of portal vein (cirrhosis, splenomegaly, portal hypertension); Brain MRI (bilateral symmetric T1 hyperintensity in globus pallidus from manganese deposition)."
+  },
+  {
+    "id": "uremic_encephalopathy",
+    "name": "Uremic Encephalopathy (End-Stage Renal Disease)",
+    "icd10": "N18.6",
+    "discipline": "Nephrology",
+    "systemic_symptoms": "Lethargy, fatigue, poor concentration, apathy, emotional lability, delirium with visual hallucinations, delusions, sleep fragmentation, anorexia, metallic taste in mouth.",
+    "physical_signs": "Asterixis, multifocal myoclonus (spontaneous irregular twitches of face and limbs), pericardial friction rub (uremic pericarditis), uremic frost on skin, peripheral edema, sallow-yellow complexion, pruritus excoriations.",
+    "diagnostic_workup": "Serum Blood Urea Nitrogen (BUN markedly elevated, often > 80-100 mg/dL); Serum Creatinine (elevated > 4-8 mg/dL with eGFR < 15 mL/min/1.73m2); Arterial Blood Gas (metabolic acidosis with elevated anion gap); Serum Potassium (hyperkalemia); Renal Ultrasound (bilateral shrunken, echogenic kidneys in chronic disease)."
+  },
+  {
+    "id": "vitamin_b12_deficiency",
+    "name": "Vitamin B12 Deficiency / Subacute Combined Degeneration",
+    "icd10": "E53.8 / G32.0",
+    "discipline": "Hematology / Neurology",
+    "systemic_symptoms": "'Megaloblastic madness': severe refractory depression, psychosis, paranoia, irritability, apathy, memory loss, dementia, cognitive slowing, occurring even in the complete absence of anemia.",
+    "physical_signs": "Loss of vibratory sensation and proprioception in lower extremities (dorsal column dysfunction); sensory ataxia, positive Romberg test; hyperreflexia and extensor plantars (Babinski sign from corticospinal involvement); peripheral 'glove-and-stocking' paresthesias; atrophic glossitis (smooth, beefy red tongue); lemon-yellow skin pallor.",
+    "diagnostic_workup": "Serum Vitamin B12 level (< 200 pg/mL diagnostic; 200-350 borderline); Serum Methylmalonic Acid (MMA) and Homocysteine (both markedly elevated in tissue B12 deficiency; MMA > 400 nmol/L); Complete Blood Count (macrocytic anemia with MCV > 100 fL, though 20-30% have normal MCV); Anti-Intrinsic Factor and Anti-Parietal Cell antibodies (Pernicious anemia)."
+  },
+  {
+    "id": "wernicke_korsakoff_syndrome",
+    "name": "Thiamine (B1) Deficiency / Wernicke-Korsakoff Syndrome",
+    "icd10": "E51.2 / F10.6",
+    "discipline": "Neurology / Nutrition",
+    "systemic_symptoms": "Classic Wernicke Triad: (1) acute confusion / delirium, (2) ataxia, (3) ophthalmoplegia. Progression to Korsakoff syndrome: profound anterograde and retrograde amnesia with spontaneous confabulation (fabricating plausible memories to fill memory voids) and apathy.",
+    "physical_signs": "Horizontal nystagmus, bilateral lateral rectus palsy (cranial nerve VI palsy), conjugate gaze palsies; wide-based cerebellar ataxia; peripheral sensorimotor polyneuropathy; hypothermia; hypotension.",
+    "diagnostic_workup": "Clinical diagnosis requiring urgent empiric IV thiamine before any glucose administration; Whole blood thiamine diphosphate / pyrophosphate level (subnormal); Erythrocyte transketolase activity (ETKA) (elevated activation coefficient > 25%); Brain MRI (bilateral symmetric T2/FLAIR hyperintensities in the mamillary bodies, medial thalami, periaqueductal gray, and tectal plate)."
+  },
+  {
+    "id": "pellagra_niacin",
+    "name": "Pellagra (Vitamin B3 / Niacin Deficiency)",
+    "icd10": "E52",
+    "discipline": "Nutrition / Dermatology",
+    "systemic_symptoms": "The 4 Ds: (1) Diarrhea, (2) Dermatitis, (3) Dementia, (4) Death. Insomnia, fatigue, apathy, profound depressive psychosis, paranoia, disorientation, visual/tactile hallucinations.",
+    "physical_signs": "Casal necklace (pathognomonic sharply demarcated hyperkeratotic, hyperpigmented erythematous rash over sun-exposed areas of neck, upper chest, dorsum of hands/feet); beefy red glossitis and stomatitis; watery diarrhea.",
+    "diagnostic_workup": "Urinary N-methylnicotinamide excretion (< 0.8 mg/day); Serum niacin and tryptophan levels; Rapid clinical resolution following oral/parenteral nicotinamide administration."
+  },
+  {
+    "id": "occult_pancreatic_malignancy",
+    "name": "Occult Malignancy / Pancreatic Adenocarcinoma",
+    "icd10": "C25.9",
+    "discipline": "Oncology",
+    "systemic_symptoms": "Sudden onset of severe major depression, profound anhedonia, and impending sense of doom in patients over 50 with no prior psychiatric history, preceding gastrointestinal signs by 6-12 months.",
+    "physical_signs": "Unexplained progressive weight loss, anorexia, dull epigastric pain radiating to back relieved by leaning forward, Courvoisier sign (painless palpable gallbladder with jaundice), Trousseau syndrome of malignancy (migratory superficial thrombophlebitis).",
+    "diagnostic_workup": "Abdominal multiphase contrast-enhanced helical CT (pancreatic protocol); CA 19-9 tumor marker (elevated > 37 U/mL); Endoscopic Ultrasound (EUS) with fine-needle aspiration."
+  },
+  {
+    "id": "severe_iron_deficiency",
+    "name": "Severe Iron Deficiency & Microcytic Hypoxia",
+    "icd10": "D50.9",
+    "discipline": "Hematology",
+    "systemic_symptoms": "Profound fatigue, generalized lethargy, apathy, cognitive slowing, impaired attention, depression, cold intolerance, pica (craving ice / pagophagia, dirt, chalk).",
+    "physical_signs": "Conjunctival and mucosal pallor, koilonychia (spoon-shaped brittle nails), atrophic tongue glossitis, angular cheilitis, restless legs syndrome, resting tachycardia with systolic flow murmur.",
+    "diagnostic_workup": "Serum Ferritin (subnormal < 30 ng/mL; < 15 ng/mL pathognomonic for iron deficiency); Serum Iron (low) and Total Iron-Binding Capacity (TIBC elevated > 400 mcg/dL); Transferrin saturation (< 15-20%); CBC (microcytic hypochromic anemia with MCV < 80 fL)."
+  },
+  {
+    "id": "hypercapnia_hypoxia",
+    "name": "Chronic Hypercapnia & Cerebral Hypoxia (COPD / OHS)",
+    "icd10": "J96.02 / R09.02",
+    "discipline": "Pulmonology",
+    "systemic_symptoms": "Morning 'carbon dioxide' headaches, daytime hypersomnolence, nocturnal restlessness, confusion, paranoid delirium, irritability, executive impairment, panic attacks from dyspnea.",
+    "physical_signs": "Asterixis ('CO2 flap'), conjunctival suffusion, plethoric facial flushing, barrel chest, wheezing or decreased breath sounds, pursed-lip breathing, peripheral cyanosis, tachypnea.",
+    "diagnostic_workup": "Arterial Blood Gas (ABG): PaCO2 (elevated > 45-50 mmHg), PaO2 (decreased < 60 mmHg), compensated respiratory acidosis (elevated serum HCO3 > 28-30 mEq/L); Pulse oximetry; Overnight nocturnal pulse oximetry or Polysomnography."
+  },
+  {
+    "id": "cardiac_arrhythmia_syncope",
+    "name": "Cardiac Arrhythmia / Postural Orthostatic Tachycardia Syndrome (POTS)",
+    "icd10": "I49.9 / G90.A",
+    "discipline": "Cardiology / Autonomic",
+    "systemic_symptoms": "Paroxysmal surges of panic, lightheadedness, impending doom, cognitive 'brain fog', chest tightness, tremulousness upon standing or during physical exertion, frequently misdiagnosed as panic disorder or generalized anxiety.",
+    "physical_signs": "POTS: Sustained heart rate increase of >= 30 bpm (or >= 40 bpm in adolescents) within 10 minutes of standing/head-up tilt without orthostatic hypotension; acrocyanosis (dependent purplish discoloration of legs/feet). Arrhythmias: irregular pulse, episodic syncope without aura or postictal state.",
+    "diagnostic_workup": "Formal 10-minute active stand test or Head-Up Tilt Table Test (HUTT); 12-lead ECG; 24- to 48-hour Holter monitor or 14-day continuous ambulatory cardiac patch (evaluating supraventricular tachycardia, sinus node dysfunction, AV block); Transthoracic Echocardiogram."
+  },
+  {
+    "id": "autoimmune_limbic_encephalitis",
+    "name": "Autoimmune Limbic Encephalitis (LGI1, CASPR2, AMPAR, GABA-B)",
+    "icd10": "G04.81",
+    "discipline": "Neurology / Neuro-immunology",
+    "systemic_symptoms": "Subacute severe short-term memory loss, temporal lobe seizures, emotional lability, anxiety, hallucinations, delirium, sleep disturbance (morvan syndrome / agrypnia excitata).",
+    "physical_signs": "Faciobrachial dystonic seizures (FBDS) pathognomonic for LGI1 (brief, frequent, unilateral jerking of face and arm, often 20-50x daily); neuromyotonia / peripheral nerve hyperexcitability; autonomic hyperactivity; hyperreflexia.",
+    "diagnostic_workup": "Serum and CSF Autoimmune Encephalopathy antibody panel (LGI1, CASPR2, AMPAR, GABA-B, GAD65); Brain MRI with contrast (bilateral T2/FLAIR hyperintensity in medial temporal lobes/hippocampi); Continuous video-EEG; Paraneoplastic whole-body FDG-PET/CT (screening for small cell lung cancer, thymoma)."
+  },
+  {
+    "id": "hashimotos_encephalopathy",
+    "name": "Hashimoto's Encephalopathy / SREAT",
+    "icd10": "E06.3 / G04.81",
+    "discipline": "Endocrinology / Neuro-immunology",
+    "systemic_symptoms": "Relapsing-remitting or progressive encephalopathy, acute psychosis, visual hallucinations, paranoia, depression, fluctuating confusion, myoclonus, seizures, often in euthyroid patients.",
+    "physical_signs": "Myoclonic jerks (frequently stimulus-sensitive), tremor, focal neurological deficits, hyperreflexia, extensor plantars, responsive to corticosteroids.",
+    "diagnostic_workup": "Extremely high titers of Anti-Thyroperoxidase (anti-TPO) antibodies (> 200-500 IU/mL) and/or Anti-Thyroglobulin (anti-Tg) antibodies; Serum TSH and free T4 (often normal / euthyroid); CSF analysis (elevated protein, normal glucose, absent pleocytosis); Dramatic response to high-dose IV methylprednisolone."
+  },
+  {
+    "id": "conn_syndrome",
+    "name": "Primary Aldosteronism (Conn's Syndrome)",
+    "icd10": "E26.01",
+    "discipline": "Endocrinology",
+    "systemic_symptoms": "Chronic fatigue, muscle weakness, cramping, paresthesias, generalized anxiety, headaches, nocturnal polyuria.",
+    "physical_signs": "Treatment-resistant hypertension (requiring >= 3 antihypertensive agents including a diuretic), absence of peripheral edema.",
+    "diagnostic_workup": "Plasma Aldosterone-to-Renin Ratio (ARR > 20-30 with plasma aldosterone > 15 ng/dL); BMP (hypokalemia and metabolic alkalosis, though 50% are normokalemic); Adrenal CT scan; Adrenal venous sampling (AVS)."
+  },
+  {
+    "id": "hypomagnesemia",
+    "name": "Hypomagnesemia",
+    "icd10": "E83.42",
+    "discipline": "Metabolic / Nephrology",
+    "systemic_symptoms": "Severe irritability, generalized anxiety, delirium, insomnia, confusion, muscular tremors, twitching, tetany, refractory hypocalcemia and hypokalemia.",
+    "physical_signs": "Positive Chvostek and Trousseau signs, carpopedal spasm, hyperreflexia, vertical/torsional nystagmus, cardiac dysrhythmias.",
+    "diagnostic_workup": "Serum magnesium (< 1.7 mg/dL; severe < 1.0 mg/dL); 12-lead ECG (prolonged PR and QT intervals, ST depression, ventricular ectopy, risk of Torsades de Pointes); Concurrent serum calcium and potassium levels."
+  },
+  {
+    "id": "nmosd",
+    "name": "Neuromyelitis Optica Spectrum Disorder (NMOSD / Devic Disease)",
+    "icd10": "G36.0",
+    "discipline": "Neurology / Neuro-immunology",
+    "systemic_symptoms": "Severe fatigue, cognitive changes, intractable nausea, vomiting, or hiccups lasting weeks (area postrema syndrome) misdiagnosed as somatoform or eating disorder; recurrent paraplegia.",
+    "physical_signs": "Severe bilateral or unilateral optic neuritis (profound visual loss); longitudinally extensive transverse myelitis (LETM spanning >= 3 contiguous vertebral segments); paraparesis; sensory level.",
+    "diagnostic_workup": "Serum Aquaporin-4 (AQP4-IgG) antibody assay (highly specific cell-based assay); Myelin Oligodendrocyte Glycoprotein (MOG-IgG) antibody; Spine MRI (T2 lesion extending >= 3 vertebral segments); Brain MRI (periependymal area postrema lesions in dorsal medulla)."
+  },
+  {
+    "id": "sydenhams_chorea",
+    "name": "Sydenham's Chorea (Post-Streptococcal Rheumatic Encephalitis)",
+    "icd10": "I02.9",
+    "discipline": "Neurology / Infectious Disease",
+    "systemic_symptoms": "Rapid-onset emotional lability, obsessive-compulsive symptoms, explosive crying or laughing, generalized anxiety, restlessness, occurring 1-6 months after acute streptococcal pharyngitis.",
+    "physical_signs": "Choreiform movements (purposeless, rapid, jerky involuntary movements of face and limbs); 'milkmaid's sign' (intermittent grasp when squeezing examiner's hand); 'spooning' sign (dorsiflexion of wrists with metacarpophalangeal flexion on outstretched arms); darting tongue ('jack-in-the-box' tongue); cardiac murmur (rheumatic carditis).",
+    "diagnostic_workup": "Clinical diagnosis (Jones criteria for Rheumatic Fever); ASO and Anti-DNase B titers; Echocardiogram (mitral/aortic valvulitis); Throat culture; Brain MRI (normal or transient hyperintensity in basal ganglia)."
+  },
+  {
+    "id": "tardive_tourettism",
+    "name": "Tardive Tourettism & Drug-Induced Movement Disorders",
+    "icd10": "G25.69 / G24.01",
+    "discipline": "Neurology / Pharmacology",
+    "systemic_symptoms": "New onset of motor and phonic tics, repetitive vocalizations, coprolalia, or echolalia appearing in adulthood following months or years of neuroleptic or dopamine-blocking therapy.",
+    "physical_signs": "Involuntary motor tics (blinking, facial grimacing, shoulder shrugging) and vocal tics (grunting, barking, throat clearing) persisting without premonitory urge; concurrent tardive dyskinesia (buccolingual-masticatory choreoathetosis).",
+    "diagnostic_workup": "Detailed pharmacotherapy timeline confirming chronic dopamine antagonist exposure (>= 3 months); AIMS (Abnormal Involuntary Movement Scale) examination; Brain MRI (ruling out structural basal ganglia stroke/tumor)."
+  },
+  {
+    "id": "cerebral_toxoplasmosis",
+    "name": "Cerebral Toxoplasmosis (Toxoplasma gondii)",
+    "icd10": "B58.2",
+    "discipline": "Infectious Disease / Neurology",
+    "systemic_symptoms": "Subacute headache, confusion, fever, lethargy, delusions, hallucinations, personality changes, seizures in immunocompromised patients (CD4 < 100 cells/uL).",
+    "physical_signs": "Focal neurological deficits (hemiparesis, cranial nerve palsies, aphasia), ataxia, altered mental status, fever, cervical lymphadenopathy.",
+    "diagnostic_workup": "Brain MRI with contrast (multiple ring-enhancing lesions with surrounding vasogenic edema, predilection for basal ganglia and corticomedullary junction); Serum Toxoplasma gondii IgG antibody; Response to empiric pyrimethamine, sulfadiazine, and leucovorin."
+  },
+  {
+    "id": "neurocysticercosis",
+    "name": "Neurocysticercosis (Taenia solium Larval Encephalopathy)",
+    "icd10": "B69.0",
+    "discipline": "Infectious Disease / Neurology",
+    "systemic_symptoms": "New-onset adult seizures, chronic progressive headaches, intracranial hypertension, psychosis, depression, cognitive decline, common in endemic regions (Latin America, Sub-Saharan Africa, South Asia).",
+    "physical_signs": "Papilledema, focal neurological deficits, meningeal signs, altered mental status.",
+    "diagnostic_workup": "Brain MRI/CT (pathognomonic cystic lesions with hyperdense eccentric mural nodule representing the scolex - 'hole-with-dot' appearance; calcified granulomas); Serum enzyme-linked immunoelectrotransfer blot (EITB) for Taenia solium."
+  },
+  {
+    "id": "progressive_multifocal_leukoencephalopathy",
+    "name": "Progressive Multifocal Leukoencephalopathy (PML / JC Virus)",
+    "icd10": "A81.2",
+    "discipline": "Neurology / Infectious Disease",
+    "systemic_symptoms": "Subacute insidious cognitive decline, aphasia, visual field loss, personality changes, hemiparesis in immunosuppressed individuals (HIV CD4 < 200, natalizumab, rituximab).",
+    "physical_signs": "Homonymous hemianopia, cortical blindness, limb weakness, ataxia, absence of fever or headache.",
+    "diagnostic_workup": "Brain MRI (asymmetric, confluent multifocal white matter T2/FLAIR hyperintensities involving subcortical U-fibers without mass effect or contrast enhancement); Lumbar puncture with CSF JC virus PCR (high sensitivity/specificity)."
+  },
+  {
+    "id": "herpes_simplex_encephalitis",
+    "name": "Herpes Simplex Virus Encephalitis (HSV-1)",
+    "icd10": "B00.4",
+    "discipline": "Infectious Disease / Neurology",
+    "systemic_symptoms": "Acute fever, headache, bizarre behavior, olfactory hallucinations, emotional lability, aphasia, memory loss, seizures, progressing to coma over days.",
+    "physical_signs": "Fever, neck stiffness (meningismus), focal neurological signs, temporal lobe seizures, dysphasia.",
+    "diagnostic_workup": "Lumbar puncture with CSF HSV-1/2 PCR (gold standard, 98% sensitive); CSF analysis (lymphocytic pleocytosis 10-500 WBC/uL, elevated RBC count, elevated protein); Brain MRI (asymmetric T2/FLAIR hyperintensity and restricted diffusion in temporal and inferior frontal lobes); Immediate IV acyclovir initiation."
+  },
+  {
+    "id": "myasthenia_gravis",
+    "name": "Myasthenia Gravis",
+    "icd10": "G70.00",
+    "discipline": "Neurology",
+    "systemic_symptoms": "Severe fluctuating muscle weakness and fatigue, worsening as day progresses or with repetitive activity, dysarthria, dysphagia, misdiagnosed as conversion disorder or chronic fatigue syndrome.",
+    "physical_signs": "Fatigable ptosis (worsening on sustained 1-minute upward gaze / Simpson plus sign); binocular diplopia; 'myasthenic snarl' (horizontal smile from facial weakness); ice-pack test (resolution of ptosis after 2 minutes of ice application to eyelid).",
+    "diagnostic_workup": "Serum Anti-Acetylcholine Receptor (AChR) binding, blocking, and modulating antibodies (positive in 85% of generalized MG); Anti-MuSK antibodies; Repetitive nerve stimulation (RNS) showing decremental compound muscle action potential; Chest CT (screening for thymoma in 10-15%)."
+  },
+  {
+    "id": "guillain_barre_syndrome",
+    "name": "Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyradiculoneuropathy)",
+    "icd10": "G61.0",
+    "discipline": "Neurology",
+    "systemic_symptoms": "Symmetrical ascending weakness and numbness starting in lower extremities, severe neuropathic back/leg pain, dyspnea, autonomic lability, following antecedent respiratory or Campylobacter jejuni GI infection.",
+    "physical_signs": "Progressive, symmetrical ascending flaccid quadriparesis; complete generalized areflexia (absent deep tendon reflexes); facial diplegia; autonomic instability (tachycardia, labile blood pressure, cardiac dysrhythmias).",
+    "diagnostic_workup": "Lumbar puncture demonstrating *albuminocytological dissociation* (markedly elevated CSF protein > 45-200 mg/dL with normal CSF cell count < 5-10 WBC/uL); Nerve conduction studies / Electromyography (demyelinating pattern: prolonged distal latencies, conduction blocks, delayed F-waves); Pulmonary function tests (FVC, NIF)."
+  },
+  {
+    "id": "chiari_malformation",
+    "name": "Chiari I Malformation",
+    "icd10": "Q07.0",
+    "discipline": "Neurology / Neurosurgery",
+    "systemic_symptoms": "Occipital/suboccipital headache provoked or exacerbated by Valsalva maneuvers (coughing, laughing, bending, straining), dizziness, vertigo, visual disturbances, dysphagia, chronic fatigue, anxiety.",
+    "physical_signs": "Downbeat nystagmus, ataxia, spasticity, hyperreflexia, scoliosis, cape-like sensory loss to pain and temperature if associated with syringomyelia.",
+    "diagnostic_workup": "Brain and Cervical Spine MRI (demonstrating cerebellar tonsillar herniation >= 5 mm below the foramen magnum; sagittal T2 evaluation for cervical cord syrinx/syrinx cavity)."
+  },
+  {
+    "id": "tuberous_sclerosis",
+    "name": "Tuberous Sclerosis Complex (TSC)",
+    "icd10": "Q85.1",
+    "discipline": "Genetics / Neurology",
+    "systemic_symptoms": "High rate of autism spectrum disorder (40-50%), intellectual disability, ADHD, sleep disruption, intractable focal and generalized epilepsy.",
+    "physical_signs": "Cutaneous markers: Ash-leaf hypomelanotic macules (visualized under Wood's UV lamp, >= 3 lesions), facial angiofibromas (adenoma sebaceum over nose/cheeks), shagreen patches (leathery plaques in lumbosacral region), periungual fibromas (Koenen tumors).",
+    "diagnostic_workup": "Brain MRI (cortical tubers, subependymal nodules [SENs], subependymal giant cell astrocytomas [SEGAs]); Renal ultrasound/MRI (bilateral angiomyolipomas); Echocardiogram (cardiac rhabdomyomas); Genetic testing (TSC1 and TSC2 mutations)."
+  },
+  {
+    "id": "neurofibromatosis_1",
+    "name": "Neurofibromatosis Type 1 (von Recklinghausen Disease)",
+    "icd10": "Q85.00",
+    "discipline": "Genetics / Neurology",
+    "systemic_symptoms": "High prevalence of ADHD (30-50%), specific learning disorders, visual-spatial deficits, executive dysfunction, social communication difficulties, chronic headaches.",
+    "physical_signs": ">= 6 Café-au-lait macules (> 5 mm prepubertal, > 15 mm postpubertal); axillary or inguinal freckling (Crowe sign); >= 2 neurofibromas or 1 plexiform neurofibroma; optic pathway glioma; >= 2 iris Lisch nodules on slit-lamp exam; sphenoid dysplasia or tibial pseudarthrosis.",
+    "diagnostic_workup": "Clinical NIH diagnostic criteria; Slit-lamp ophthalmology exam (Lisch nodules); Brain and Orbit MRI (evaluating optic nerve gliomas and T2 hyperintense FASI / focal areas of signal intensity); NF1 gene testing."
+  },
+  {
+    "id": "fxtas",
+    "name": "Fragile X-Associated Tremor/Ataxia Syndrome (FXTAS)",
+    "icd10": "G25.89",
+    "discipline": "Genetics / Neurology",
+    "systemic_symptoms": "Late-onset progressive intention tremor, cerebellar gait ataxia, parkinsonism, cognitive decline, executive dysfunction, memory loss, depression, anxiety, personality changes in male premutation carriers > 50 years old.",
+    "physical_signs": "Intention and action tremor of hands, wide-based ataxic gait, parkinsonian rigidity, peripheral neuropathy (loss of vibration sense), autonomic dysfunction (impotence, incontinence).",
+    "diagnostic_workup": "FMR1 DNA testing demonstrating CGG trinucleotide repeat size in the premutation range (55–200 repeats); Brain MRI (symmetric T2/FLAIR hyperintensity of the middle cerebellar peduncles - MCP sign; generalized brain atrophy and white matter hyperintensities)."
+  },
+  {
+    "id": "giant_cell_arteritis",
+    "name": "Giant Cell Arteritis (Temporal Arteritis)",
+    "icd10": "M31.6",
+    "discipline": "Rheumatology / Ophthalmology",
+    "systemic_symptoms": "Severe throbbing unilateral or bilateral headache in patients >= 50 years, scalp tenderness (pain combing hair), jaw claudication (fatigue/pain chewing), polymyalgia rheumatica (shoulder/hip girdle morning stiffness), depression, weight loss, fever.",
+    "physical_signs": "Thickened, tender, nodular temporal arteries with decreased or absent pulsation; anterior ischemic optic neuropathy (sudden unilateral painless vision loss / amaurosis fugax); relative afferent pupillary defect.",
+    "diagnostic_workup": "Erythrocyte Sedimentation Rate (ESR markedly elevated > 50-100 mm/h); C-Reactive Protein (CRP markedly elevated); Temporal artery ultrasound (hypoechoic 'halo' sign); Temporal artery biopsy (transmural granulomatous inflammation, multinucleated giant cells - minimum 1.5-2.0 cm segment); Urgent empiric high-dose IV/oral corticosteroids."
+  },
+  {
+    "id": "fibromyalgia_central_sensitization",
+    "name": "Fibromyalgia & Central Sensitization Syndrome",
+    "icd10": "M79.7",
+    "discipline": "Rheumatology / Neurobiology",
+    "systemic_symptoms": "Widespread multisite chronic musculoskeletal pain, non-restorative sleep, morning stiffness, severe cognitive dysfunction ('fibro fog'), major depression, generalized anxiety, irritable bowel symptoms, chronic headaches.",
+    "physical_signs": "Diffuse tenderness to palpation at standardized anatomical tender points; allodynia (pain produced by non-painful light touch); hyperalgesia; absence of joint synovitis, joint swelling, or muscle atrophy.",
+    "diagnostic_workup": "2016 ACR Diagnostic Criteria: Widespread Pain Index (WPI >= 7) and Symptom Severity Scale (SSS >= 5), or WPI 4-6 and SSS >= 9 for >= 3 months; Laboratory rule-outs (normal ESR, CRP, CBC, CMP, TSH, CK, ruling out inflammatory myopathy, rheumatoid arthritis, hypothyroidism)."
+  },
+  {
+    "id": "sjogrens_syndrome",
+    "name": "Sjögren's Syndrome with Neuropsychiatric Features",
+    "icd10": "M35.00",
+    "discipline": "Rheumatology / Autoimmune",
+    "systemic_symptoms": "Severe fatigue, chronic brain fog, cognitive slowing, depression, anxiety, dry eyes (keratoconjunctivitis sicca), dry mouth (xerostomia), painful sensory neuropathy.",
+    "physical_signs": "Parotid gland enlargement, lack of salivary pooling under tongue, dental caries, dry cracked tongue, positive Schirmer's test (< 5 mm wetting in 5 min).",
+    "diagnostic_workup": "Serum Anti-SSA/Ro and Anti-SSB/La antibodies; Antinuclear Antibodies (ANA); Rheumatoid Factor (RF); Schirmer test; Slit-lamp with ocular surface fluorescein staining; Minor labial salivary gland biopsy (focal lymphocytic sialadenitis with focus score >= 1/4 mm2)."
+  },
+  {
+    "id": "behcets_disease",
+    "name": "Behçet's Disease (Neuro-Behçet's)",
+    "icd10": "M35.2",
+    "discipline": "Rheumatology / Neurology",
+    "systemic_symptoms": "Neuropsychiatric Behçet's: progressive personality changes, euphoria, disinhibition, paranoia, memory loss, brainstem syndromes, headaches, aseptic meningitis.",
+    "physical_signs": "Recurrent painful oral aphthous ulcers (>= 3 times/year), recurrent painful genital ulcers, uveitis / hypopyon, erythema nodosum, positive pathergy test (sterile pustule forming 24-48h after skin prick with 20G needle).",
+    "diagnostic_workup": "International Criteria for Behçet's Disease (ICBD); HLA-B51 testing; Brain MRI (mesodiencephalic junction and brainstem T2/FLAIR hyperintensities); CSF analysis (elevated protein, neutrophil or lymphocytic pleocytosis)."
+  },
+  {
+    "id": "sarcoidosis_neurosarcoidosis",
+    "name": "Neurosarcoidosis",
+    "icd10": "D86.89",
+    "discipline": "Pulmonology / Neurology",
+    "systemic_symptoms": "Severe cognitive impairment, personality change, depression, hallucinations, chronic headaches, polyuria/polydipsia from hypothalamic involvement, cranial neuropathies.",
+    "physical_signs": "Unilateral or bilateral facial nerve palsy (cranial nerve VII), uveitis, parotid gland enlargement, lupus pernio (violaceous skin plaques on face/nose), erythema nodosum, pulmonary lymphadenopathy.",
+    "diagnostic_workup": "Brain and Spine MRI with gadolinium (leptomeningeal nodular enhancement, especially at skull base and hypothalamus; periventricular white matter lesions); Chest CT (bilateral hilar lymphadenopathy); Serum Angiotensin-Converting Enzyme (ACE) (elevated in 50%); Lumbar puncture (elevated CSF protein, lymphocytic pleocytosis, oligoclonal bands); Biopsy of affected tissue (non-caseating granulomas)."
+  },
+  {
+    "id": "antiphospholipid_syndrome",
+    "name": "Antiphospholipid Syndrome (APS)",
+    "icd10": "D68.61",
+    "discipline": "Hematology / Rheumatology",
+    "systemic_symptoms": "Recurrent thromboembolic events, recurrent pregnancy loss, cognitive impairment, severe migraine-like headaches, chorea, acute psychosis, depression, transverse myelitis.",
+    "physical_signs": "Livedo reticularis (violaceous, net-like lacey cutaneous mottling of arms and legs), superficial thrombophlebitis, digital ischemia / gangrene, heart valve murmurs (Libman-Sacks endocarditis).",
+    "diagnostic_workup": "Sydney Criteria: Laboratory criteria requiring persistent positive titers on >= 2 occasions at least 12 weeks apart of: (1) Lupus Anticoagulant (dilute Russell viper venom time [dRVVT]), (2) Anticardiolipin antibodies (IgG/IgM medium-to-high titer), (3) Anti-beta-2-glycoprotein I antibodies (IgG/IgM > 99th percentile); Brain MRI (subcortical ischemic white matter lesions)."
+  },
+  {
+    "id": "diabetic_ketoacidosis",
+    "name": "Diabetic Ketoacidosis (DKA) & Hyperosmolar Hyperglycemic State (HHS)",
+    "icd10": "E11.10 / E11.00",
+    "discipline": "Endocrinology / Critical Care",
+    "systemic_symptoms": "Polyuria, polydipsia, lethargy, acute confusion, psychotic agitation, visual hallucinations, abdominal pain, nausea, progressing to coma.",
+    "physical_signs": "Kussmaul breathing (deep, rapid, labored respirations), fruity acetone breath odor, severe dehydration (dry mucous membranes, sunken orbits, poor skin turgor), tachycardia, hypotension.",
+    "diagnostic_workup": "Serum glucose (DKA > 250 mg/dL; HHS > 600 mg/dL); Arterial Blood Gas (pH < 7.30 in DKA; HCO3 < 18 mEq/L); Elevated serum anion gap (> 12 mEq/L); Serum and urine beta-hydroxybutyrate and acetoacetate; Effective serum osmolality (> 320 mOsm/kg in HHS)."
+  },
+  {
+    "id": "organophosphate_toxicity",
+    "name": "Organophosphate & Carbamate Cholinergic Toxicity",
+    "icd10": "T60.0X1A",
+    "discipline": "Toxicology",
+    "systemic_symptoms": "Severe anxiety, emotional lability, restlessness, nightmares, confusion, delirium, followed by coma, in agricultural or insecticide-exposed patients.",
+    "physical_signs": "SLUDGEM toxidrome: Salivation, Lacrimation, Urination, Defecation, Gastrointestinal distress, Emesis, Miosis (pinpoint pupils). Fasciculations, muscle weakness, bronchorrhea, bronchospasm, severe bradycardia.",
+    "diagnostic_workup": "Red blood cell (RBC) acetylcholinesterase and serum plasma butyrylcholinesterase (pseudocholinesterase) activity (< 50% baseline confirms severe poisoning); Immediate response to IV atropine and pralidoxime (2-PAM)."
+  },
+  {
+    "id": "mercury_toxicity",
+    "name": "Mercury Toxicity (Erethism Mercurialis)",
+    "icd10": "T56.1X1A",
+    "discipline": "Toxicology / Environmental",
+    "systemic_symptoms": "'Mad as a hatter' erethism: severe emotional lability, pathognomonic excessive timidity / shyness, severe anxiety, explosive rage outbursts, depression, memory loss, hallucinations, insomnia.",
+    "physical_signs": "Coarse intention tremor ('mercurial tremor' of hands, tongue, lips), ataxia, constricted visual fields (tunnel vision), sensorimotor peripheral neuropathy, gingivitis, stomatitis, excessive salivation.",
+    "diagnostic_workup": "Whole blood mercury level (> 5-10 mcg/L indicates elevated exposure; > 50-100 toxic in acute/organic); 24-hour urine mercury excretion (> 20-50 mcg/L in inorganic/elemental exposure); Visual field perimetry."
+  },
+  {
+    "id": "manganese_neurotoxicity",
+    "name": "Manganese Neurotoxicity (Manganism)",
+    "icd10": "T57.2X1A",
+    "discipline": "Toxicology / Occupational",
+    "systemic_symptoms": "Locura manganica ('manganese madness'): acute psychiatric syndrome in miners/welders featuring emotional instability, hallucinations, compulsive acts, aggression, progressing to parkinsonism.",
+    "physical_signs": "Atypical parkinsonism (early gait disturbance with 'cock-walk' - walking on toes with flexed elbows and spine; dystonia, bradykinesia, facial masking, lack of resting tremor and poor levodopa responsiveness).",
+    "diagnostic_workup": "Whole blood manganese level (elevated > 10-12 mcg/L); 24-hour urine manganese; Brain MRI (characteristic bilateral symmetric hyperintensity on T1-weighted imaging in globus pallidus and substantia nigra)."
+  },
+  {
+    "id": "beta_blocker_depression",
+    "name": "Beta-Blocker-Induced Depression & Apathy",
+    "icd10": "T44.7X5A",
+    "discipline": "Pharmacology / Cardiology",
+    "systemic_symptoms": "Profound fatigue, lethargy, psychomotor retardation, anhedonia, vivid bizarre nightmares, insomnia, erectile dysfunction, following lipophilic beta-blocker initiation (propranolol, metoprolol).",
+    "physical_signs": "Resting sinus bradycardia (HR < 50-60 bpm), blunted chronotropic response to exercise, cool extremities, Raynaud exacerbation.",
+    "diagnostic_workup": "Medication audit and chronological correlation with beta-blocker initiation; Resting 12-lead ECG (sinus bradycardia, AV block); Resolution or marked improvement upon switching to hydrophilic agent (atenolol, nadolol) or alternative antihypertensive class."
+  },
+  {
+    "id": "fluoroquinolone_neurotoxicity",
+    "name": "Fluoroquinolone-Induced Neurotoxicity & Psychosis",
+    "icd10": "T36.8X5A",
+    "discipline": "Pharmacology / Toxicology",
+    "systemic_symptoms": "Sudden onset of severe anxiety, panic attacks, depersonalization, derealization, hallucinations, paranoia, agitation, suicidal ideation, severe insomnia, within 24-72 hours of ciprofloxacin, levofloxacin, or moxifloxacin.",
+    "physical_signs": "Tremor, myoclonus, hyperreflexia, ataxia, tendon pain / Achilles tendinopathy or tendon rupture.",
+    "diagnostic_workup": "Medication audit confirming recent fluoroquinolone exposure; Mechanism involves direct GABA receptor antagonism and NMDA activation; Discontinuation of antibiotic; Symptomatic management."
+  },
+  {
+    "id": "interferon_alpha_depression",
+    "name": "Interferon-Alpha-Induced Depression & Suicidality",
+    "icd10": "T37.5X5A",
+    "discipline": "Pharmacology / Oncology",
+    "systemic_symptoms": "Severe major depressive episodes, profound anhedonia, severe fatigue, psychomotor retardation, irritability, high suicide risk, occurring in 30-50% of patients treated for hepatitis C or melanoma.",
+    "physical_signs": "'Flu-like' systemic symptoms (fever, chills, myalgias, arthralgias), weight loss, alopecia, injection site reactions.",
+    "diagnostic_workup": "Pharmacotherapy timeline; Complete Blood Count (leukopenia, thrombocytopenia); TSH (ruling out interferon-induced autoimmune thyroiditis); Pre-treatment and on-treatment PHQ-9 tracking; Response to SSRI therapy."
+  },
+  {
+    "id": "dopamine_agonist_icd",
+    "name": "Dopamine Agonist-Induced Impulse Control Disorders & Psychosis",
+    "icd10": "T42.8X5A",
+    "discipline": "Pharmacology / Neurology",
+    "systemic_symptoms": "Devastating impulsive behaviors: pathological gambling, compulsive hypersexuality, compulsive shopping, binge eating, punding (repetitive purposeless tinkering), paranoia, visual hallucinations, in Parkinson's or restless legs patients on pramipexole, ropinirole, or levodopa.",
+    "physical_signs": "Underlying parkinsonian signs (resting tremor, rigidity, bradykinesia), absence of prior psychiatric history of impulsivity or mania.",
+    "diagnostic_workup": "QUIP-RS (Questionnaire for Impulsive-Compulsive Disorders in Parkinson's Disease); Medication review quantifying dopamine agonist daily levodopa equivalent dose (LEDD); Tapering of agonist resolves behaviors."
+  },
+  {
+    "id": "valproate_hyperammonemic_encephalopathy",
+    "name": "Valproate-Induced Hyperammonemic Encephalopathy (VHE)",
+    "icd10": "T42.6X5A",
+    "discipline": "Pharmacology / Neurology",
+    "systemic_symptoms": "Acute to subacute cognitive slowing, lethargy, stupor, delirium, paradoxical increase in seizure frequency, occurring with normal therapeutic valproic acid serum levels and normal liver function tests.",
+    "physical_signs": "Asterixis, ataxia, fluctuating consciousness, absence of jaundice or liver tenderness.",
+    "diagnostic_workup": "Venous or arterial blood ammonia (markedly elevated > 80-200 umol/L); Serum valproic acid level (often within normal 50-100 mcg/mL therapeutic range); Liver enzymes (typically normal); Dramatic clinical response to L-carnitine administration and valproate discontinuation."
+  },
+  {
+    "id": "lithium_toxicity_silent",
+    "name": "Lithium Toxicity & SILENT Syndrome",
+    "icd10": "T43.595A",
+    "discipline": "Pharmacology / Toxicology",
+    "systemic_symptoms": "Coarse hand tremor, ataxia, dysarthria, nausea, diarrhea, confusion, progressing to delirium, myoclonus, seizures, coma. SILENT (Syndrome of Irreversible Lithium-Effectuated Neurotoxicity): permanent cerebellar ataxia and cognitive impairment persisting months/years after drug clearance.",
+    "physical_signs": "Gross coarse tremor, fasciculations, hyperreflexia, clonus, wide-based cerebellar ataxia, choreoathetoid movements, nystagmus.",
+    "diagnostic_workup": "Serum lithium level (> 1.2 mEq/L mild-moderate; > 2.0 mEq/L severe toxicity; > 2.5 mEq/L life-threatening emergency requiring hemodialysis); Serum creatinine / BUN (acute kidney injury); Serum sodium (hyponatremia worsening lithium reabsorption); 12-lead ECG (T-wave flattening, sinus node dysfunction)."
+  },
+  {
+    "id": "benzodiazepine_protracted_withdrawal",
+    "name": "Protracted Benzodiazepine Withdrawal Syndrome (PAWS)",
+    "icd10": "F13.239",
+    "discipline": "Pharmacology / Addiction",
+    "systemic_symptoms": "Severe rebound anxiety, agoraphobia, panic attacks, profound insomnia, tinnitus, depersonalization, derealization, sensory hyperacusis, electric shock sensations ('brain zaps'), lasting months after cessation.",
+    "physical_signs": "Motor restlessness, muscle twitching / fasciculations, hyperreflexia, autonomic instability, dilated pupils.",
+    "diagnostic_workup": "Comprehensive medication discontinuation timeline; Urine drug screen (confirming absence of illicit substances); Distinguishing from primary psychiatric relapse by characteristic neuro-sensory symptoms (tinnitus, paresthesias, sensory hypersensitivity)."
+  },
+  {
+    "id": "cannabis_hyperemesis_syndrome",
+    "name": "Cannabis Hyperemesis Syndrome (CHS)",
+    "icd10": "R11.10 / F12.188",
+    "discipline": "Gastroenterology / Addiction",
+    "systemic_symptoms": "Cyclic severe nausea and intractable intractable vomiting, abdominal pain, intense anxiety, depression, weight loss, in chronic daily cannabis users, frequently misdiagnosed as cyclic vomiting syndrome, panic disorder, or bulimia nervosa.",
+    "physical_signs": "Pathognomonic compulsive hot bathing or showering for hours daily (learned thermoregulatory behavior providing transient symptomatic relief); dehydration; diffuse epigastric tenderness.",
+    "diagnostic_workup": "Clinical diagnostic criteria: chronic heavy cannabis use (> 1 year), cyclic vomiting, resolution of symptoms upon sustained cessation of cannabis (verified over 3-6 months); Urine drug screen positive for THC; Normal abdominal CT and upper endoscopy."
+  },
+  {
+    "id": "anabolic_steroid_hypomania",
+    "name": "Anabolic-Androgenic Steroid Induced Hypomania / Rage",
+    "icd10": "T38.7X5A",
+    "discipline": "Endocrinology / Sports Medicine",
+    "systemic_symptoms": "'Roid rage': intense irritability, unprovoked explosive verbal/physical aggression, grandiosity, euphoria, decreased need for sleep, hypersexuality, followed by severe suicidal depression during withdrawal periods.",
+    "physical_signs": "Prominent cystic acne over face and back, severe muscular hypertrophy disproportionate to frame, gynecomastia in males, testicular atrophy, clitoromegaly and voice deepening in females, premature male-pattern alopecia, systolic hypertension.",
+    "diagnostic_workup": "Serum total and free testosterone (supraphysiologic levels or suppressed in between cycles); Suppressed LH and FSH (< 0.5 mIU/mL due to hypothalamic-pituitary-gonadal axis shutdown); Lipid panel (severely depressed HDL < 20-25 mg/dL, elevated LDL); Elevated hematocrit (> 50-54%)."
+  },
+  {
+    "id": "congestive_heart_failure_hypoperfusion",
+    "name": "Congestive Heart Failure / Low-Output Cerebral Hypoperfusion",
+    "icd10": "I50.9",
+    "discipline": "Cardiology",
+    "systemic_symptoms": "Profound fatigue, psychomotor slowing, apathy, executive dysfunction, memory impairment, delirium, nocturnal restlessness, insomnia.",
+    "physical_signs": "Elevated Jugular Venous Pressure (JVP > 8 cm H2O), positive hepatojugular reflux, third heart sound (S3 gallop), bilateral basilar lung crackles, pitting bilateral pretibial and sacral edema, orthopnea, paroxysmal nocturnal dyspnea.",
+    "diagnostic_workup": "Serum B-type Natriuretic Peptide (BNP > 100-400 pg/mL) or NT-proBNP (> 300-900 pg/mL); Transthoracic Echocardiogram (reduced left ventricular ejection fraction [LVEF < 40%] or diastolic dysfunction); Chest X-ray (cardiomegaly, pulmonary vascular congestion, Kerley B lines)."
+  },
+  {
+    "id": "thiamine_deficiency_beriberi",
+    "name": "Wet & Dry Beriberi (Thiamine Deficiency)",
+    "icd10": "E51.1",
+    "discipline": "Nutrition / Cardiology / Neurology",
+    "systemic_symptoms": "Severe fatigue, apathy, irritability, confusion, sleep fragmentation, lower extremity weakness and burning paresthesias.",
+    "physical_signs": "Dry Beriberi: symmetric sensory and motor peripheral polyneuropathy, foot drop, absent knee and ankle reflexes. Wet Beriberi: high-output heart failure, marked tachycardia, bounding pulses, peripheral edema, lactic acidosis.",
+    "diagnostic_workup": "Whole blood thiamine diphosphate; Erythrocyte transketolase activity; Elevated blood lactate and pyruvate; Immediate response to parenteral thiamine."
+  },
+  {
+    "id": "folate_deficiency",
+    "name": "Folate (Vitamin B9) Deficiency",
+    "icd10": "E53.8",
+    "discipline": "Hematology / Nutrition",
+    "systemic_symptoms": "Severe depression, apathy, cognitive slowing, fatigue, irritability, insomnia, commonly seen in chronic alcoholism, malnutrition, or patients on methotrexate or phenytoin.",
+    "physical_signs": "Pallor, atrophic glossitis, angular cheilitis, aphthous ulcers; absence of spinal cord subacute combined degeneration (vibration/proprioception preserved, distinguishing from B12).",
+    "diagnostic_workup": "Serum folate (< 2-4 ng/mL); Red blood cell (RBC) folate (< 150 ng/mL, superior marker of tissue stores); Serum homocysteine (elevated); Serum methylmalonic acid (MMA) (normal, confirming B12 is intact); Complete Blood Count (macrocytic anemia with hypersegmented neutrophils)."
+  },
+  {
+    "id": "scurvy_vitamin_c",
+    "name": "Scurvy (Vitamin C / Ascorbic Acid Deficiency)",
+    "icd10": "E54",
+    "discipline": "Nutrition / Hematology",
+    "systemic_symptoms": "Severe lethargy, apathy, chronic fatigue, depressive mood, severe generalized bone and muscle pain, anorexia, occurring in isolated elderly or severe food selectivity / ARFID.",
+    "physical_signs": "Perifollicular hyperkeratotic papules and hemorrhages; pathognomonic corkscrew hairs; gingival swelling, bleeding, and loose teeth; extensive cutaneous ecchymoses and hematomas; hemarthrosis.",
+    "diagnostic_workup": "Plasma ascorbic acid level (< 0.2 mg/dL diagnostic); Leukocyte ascorbic acid concentration (reflects tissue stores); Complete Blood Count (normocytic or macrocytic anemia); Rapid clinical resolution upon oral vitamin C administration (250-1000 mg/day)."
+  },
+  {
+    "id": "x_linked_adrenoleukodystrophy",
+    "name": "X-Linked Adrenoleukodystrophy (X-ALD)",
+    "icd10": "E71.520",
+    "discipline": "Genetics / Neurology",
+    "systemic_symptoms": "In boys (childhood cerebral): sudden behavioral changes, ADHD-like hyperactivity, aggression, school failure, rapid dementia, vision/hearing loss, progressing to vegetative state. In adult men (adrenomyeloneuropathy): progressive spastic paraparesis, cognitive impairment, depression, mania.",
+    "physical_signs": "Cutaneous hyperpigmentation (adrenal insufficiency), spastic paraparesis, hyperreflexia, extensor plantar responses, sensory ataxia, optic atrophy.",
+    "diagnostic_workup": "Plasma Very Long-Chain Fatty Acids (VLCFA) panel demonstrating elevated hexacosanoic acid (C26:0) and elevated C26:0/C22:0 and C24:0/C22:0 ratios; ABCD1 gene mutation analysis; Brain MRI with Loes scoring (symmetric confluent demyelination in parieto-occipital periventricular white matter and corpus callosum splenium with contrast-enhancing leading edge)."
+  },
+  {
+    "id": "metachromatic_leukodystrophy",
+    "name": "Metachromatic Leukodystrophy (MLD)",
+    "icd10": "E75.25",
+    "discipline": "Genetics / Neurology",
+    "systemic_symptoms": "Juvenile and adult presentations: insidious cognitive decline, personality changes, emotional blunting, delusions, psychosis, declining academic or job performance, mimicking schizophrenia or bipolar disorder.",
+    "physical_signs": "Progressive spasticity, ataxia, peripheral neuropathy (hyporeflexia or areflexia in lower extremities alongside upper motor neuron signs), optic atrophy, dysarthria.",
+    "diagnostic_workup": "Arylsulfatase A (ARSA) enzyme activity in leukocytes or cultured skin fibroblasts (markedly deficient < 10% normal); 24-hour urinary sulfatide excretion (elevated); Brain MRI (symmetric confluent T2/FLAIR hyperintensity in periventricular white matter sparing subcortical U-fibers with classic 'tigroid' or 'leopard skin' radial pattern); ARSA gene sequencing."
+  },
+  {
+    "id": "niemann_pick_c",
+    "name": "Niemann-Pick Disease Type C (NPC)",
+    "icd10": "E75.242",
+    "discipline": "Genetics / Neurology",
+    "systemic_symptoms": "Late-onset juvenile and adult presentation: progressive cognitive impairment, executive dysfunction, psychiatric symptoms (treatment-resistant psychosis, paranoid delusions, auditory hallucinations, bipolar affective disorder), dystonia.",
+    "physical_signs": "Vertical Supranuclear Gaze Palsy (VSGP) (pathognomonic early loss of voluntary vertical saccades, particularly downward gaze, with preserved vestibulo-ocular reflex / doll's eyes); gelastic cataplexy (sudden loss of muscle tone triggered by laughter without narcolepsy); cerebellar ataxia; splenomegaly or hepatomegaly.",
+    "diagnostic_workup": "Clinical detection of Vertical Supranuclear Gaze Palsy (have patient follow rapid vertical target); Plasma cholestane-3beta,5alpha,6beta-triol (cholestanetriol) and oxysterols; Biomarker lysosphingomyelin-509; Filipin staining of skin fibroblasts (impaired unesterified cholesterol trafficking); NPC1 (95%) and NPC2 (5%) gene mutation analysis."
+  },
+  {
+    "id": "melas_mitochondrial",
+    "name": "Mitochondrial Encephalomyopathy (MELAS)",
+    "icd10": "E88.40",
+    "discipline": "Genetics / Neurology",
+    "systemic_symptoms": "Recurrent migraine-like headaches, acute stroke-like episodes before age 40, psychiatric disturbances (bipolar disorder, depression, psychosis, anxiety), cognitive decline, short stature, exercise intolerance.",
+    "physical_signs": "Sensorineural hearing loss, progressive external ophthalmoplegia, proximal muscle weakness, optic neuropathy, pigmentary retinopathy, young-onset diabetes mellitus.",
+    "diagnostic_workup": "Serum and CSF resting lactic acid and pyruvic acid (elevated, with elevated lactate-to-pyruvate ratio); Brain MRI (stroke-like cortical and subcortical T2/FLAIR hyperintensities that do NOT conform to anatomical vascular territories, predilection for parietal and occipital lobes); Muscle biopsy ('ragged red fibers' on Gomori trichrome stain); Mitochondrial DNA genetic testing (m.3243A>G point mutation in MTTL1 gene present in ~80%)."
+  },
+  {
+    "id": "landau_kleffner_syndrome",
+    "name": "Landau-Kleffner Syndrome (Acquired Epileptic Aphasia)",
+    "icd10": "F80.3 / G40.802",
+    "discipline": "Pediatrics / Neurology",
+    "systemic_symptoms": "Rapid or insidious loss of receptive and expressive language skills (verbal auditory agnosia - child acts as if suddenly deaf to spoken language) between ages 3 and 7 following normal early development, accompanied by severe behavioral hyperactivity, aggression, or autistic-like withdrawal.",
+    "physical_signs": "Normal hearing on peripheral audiometry; child responds to environmental sounds (doorbell, phone) but fails to decode human speech; clinical seizures present in only 70-80% (often nocturnal).",
+    "diagnostic_workup": "All-night sleep EEG (recommended gold standard: continuous spike-and-wave discharges during slow-wave sleep [CSWS / ESES] occupying > 85% of non-REM sleep, localized over bitemporal or temporoparietal regions); Normal brain MRI; Comprehensive audiological evaluation (normal brainstem auditory evoked potentials [BAER] confirming intact peripheral hearing)."
+  },
+  {
+    "id": "sensorineural_hearing_loss",
+    "name": "Congenital / Acquired Sensorineural Hearing Loss",
+    "icd10": "H90.3",
+    "discipline": "Audiology / Otolaryngology",
+    "systemic_symptoms": "Severe language acquisition delay, articulation deficits, lack of response to verbal directives, social withdrawal, apparent inattention and distractibility in classroom, highly mimicking autism spectrum disorder or ADHD inattentive presentation.",
+    "physical_signs": "Absence of startle reflex to loud sudden sounds, failure to localize sound sources, compensatory intense visual vigilance, excessive reliance on visual gestures, normal nonverbal cognitive problem-solving.",
+    "diagnostic_workup": "Comprehensive Pediatric Audiogram (visual reinforcement audiometry or play audiometry); Auditory Brainstem Response (ABR) and Otoacoustic Emissions (OAE) testing; High-resolution temporal bone CT / inner ear MRI (ruling out cochlear malformations, enlarged vestibular aqueduct)."
+  },
+  {
+    "id": "chronic_otitis_media_effusion",
+    "name": "Chronic Otitis Media with Effusion (OME)",
+    "icd10": "H65.2",
+    "discipline": "Otolaryngology / Pediatrics",
+    "systemic_symptoms": "Fluctuating hearing loss (15-30 dB conductive loss), speech delay, articulation errors, difficulty hearing in noisy environments, apparent poor listening skills, behavioral frustration, irritability.",
+    "physical_signs": "Pneumatic otoscopy demonstrating amber/dull tympanic membrane with decreased mobility, air-fluid levels or bubbles in middle ear, retracted malleus.",
+    "diagnostic_workup": "Pneumatic Otoscopy (flat Type B tympanogram on tympanometry); Air-bone gap on pure-tone audiometry; ENT surgical evaluation for bilateral myringotomy with tympanostomy tube placement."
+  },
+  {
+    "id": "kleine_levin_syndrome",
+    "name": "Kleine-Levin Syndrome (Periodic Hypersomnia)",
+    "icd10": "G47.8",
+    "discipline": "Sleep Medicine / Neurology",
+    "systemic_symptoms": "Recurrent episodes of severe hypersomnia (sleeping 18-22 hours daily for days to weeks), accompanied by megaphagia (compulsive binge eating), hypersexuality, irritability, depersonalization, and childish regressive behavior, followed by complete normalcy between episodes.",
+    "physical_signs": "Profound lethargy, slurred speech, autonomic symptoms (flushing, sweating), hyperphagia, absence of focal neurological deficits.",
+    "diagnostic_workup": "Clinical diagnosis (ICSD-3 criteria); Overnight Polysomnography; Brain MRI (normal); Functional neuroimaging during acute episode (hypoperfusion in thalamus, hypothalamus, and basal ganglia)."
+  },
+  {
+    "id": "stiff_person_anti_gad",
+    "name": "Stiff Person Syndrome & Anti-GAD65 Encephalitis",
+    "icd10": "G25.82 / G04.81",
+    "discipline": "Neurology / Autoimmune",
+    "systemic_symptoms": "Severe task-specific and generalized phobias, agoraphobia, panic attacks triggered by sudden acoustic or tactile stimuli, progressive emotional stiffness, axial muscle rigidity.",
+    "physical_signs": "Board-like rigidity of thoracolumbar paraspinal and abdominal muscles; hyperlordosis; violent, painful stimulus-sensitive muscle spasms provoked by loud sounds, cold, or emotional distress; absence of pyramidal signs.",
+    "diagnostic_workup": "Serum and CSF Anti-Glutamic Acid Decarboxylase (anti-GAD65) antibodies (markedly elevated > 10,000 IU/mL; > 100-fold higher than in type 1 diabetes); Electromyography (continuous motor unit activity in agonist and antagonist muscles at rest); Response to high-dose diazepam and IVIG."
+  },
+  {
+    "id": "cadasil",
+    "name": "CADASIL (Cerebral Autosomal Dominant Arteriopathy)",
+    "icd10": "I67.850",
+    "discipline": "Genetics / Vascular Neurology",
+    "systemic_symptoms": "Severe migraines with atypical aura (starting in 20s-30s), followed by recurrent subcortical ischemic strokes (30s-50s), treatment-resistant major depression or bipolar disorder (in 30%), and progressive vascular dementia.",
+    "physical_signs": "Pseudobulbar palsy, pyramidal signs, spasticity, gait disturbance, urinary urge incontinence.",
+    "diagnostic_workup": "Brain MRI (pathognomonic symmetric T2/FLAIR hyperintensities in the anterior temporal lobes and external capsules, alongside diffuse periventricular white matter disease); Genetic testing (NOTCH3 gene mutations); Skin biopsy demonstrating granular osmiophilic material (GOM) in vascular smooth muscle basement membrane."
+  },
+  {
+    "id": "fahrs_disease",
+    "name": "Fahr's Disease (Primary Familial Brain Calcification)",
+    "icd10": "G23.8",
+    "discipline": "Neurology / Genetics",
+    "systemic_symptoms": "Insidious progressive cognitive decline, psychotic features (paranoid delusions, visual hallucinations), major depression, mania, catastrophic panic attacks, personality changes in adults aged 30-50.",
+    "physical_signs": "Parkinsonism (cogwheel rigidity, bradykinesia, masked facies), cerebellar ataxia, dystonia, chorea, dysarthria.",
+    "diagnostic_workup": "Non-contrast Brain CT (striking, dense, symmetrical bilateral calcification of the basal ganglia [globus pallidus, putamen, caudate], thalamus, and dentate nucleus of the cerebellum); Normal serum calcium, phosphorus, and PTH (ruling out hypoparathyroidism); Genetic testing (SLC20A2, PDGFB, PDGFRB, XPR1 mutations)."
+  },
+  {
+    "id": "prolactinoma_hyperprolactinemia",
+    "name": "Prolactinoma & Hyperprolactinemia",
+    "icd10": "D35.2 / E22.1",
+    "discipline": "Endocrinology",
+    "systemic_symptoms": "Loss of libido, erectile dysfunction, infertility, severe anhedonia, chronic fatigue, anxiety, depression, galactorrhea, amenorrhea or oligomenorrhea in women.",
+    "physical_signs": "Galactorrhea (spontaneous milky breast discharge upon nipple expression); bitemporal hemianopia (from macroadenoma optic chiasm compression); gynecomastia and loss of facial/body hair in men.",
+    "diagnostic_workup": "Fasting morning serum prolactin (> 20-25 ng/mL; prolactinoma typically > 100-200 ng/mL); Pituitary protocol MRI with and without gadolinium (visualizing microadenoma < 10 mm or macroadenoma >= 10 mm); Visual field perimetry."
+  },
+  {
+    "id": "carcinoid_syndrome",
+    "name": "Carcinoid Syndrome & Neuroendocrine Tumor",
+    "icd10": "E34.0",
+    "discipline": "Endocrinology / Oncology",
+    "systemic_symptoms": "Sudden episodes of intense anxiety, flushing, palpitations, abdominal cramping, explosive watery diarrhea, emotional lability, fatigue, mimicking severe panic disorder.",
+    "physical_signs": "Episodic cutaneous flushing (salmon-pink to violaceous erythema of face, neck, upper chest), telangiectasias, tricuspid regurgitation heart murmur (carcinoid heart disease / Hedinger syndrome), wheezing / bronchospasm.",
+    "diagnostic_workup": "24-hour urinary 5-hydroxyindoleacetic acid (5-HIAA markedly elevated > 10-15 mg/24h); Serum chromogranin A (elevated); Somatostatin receptor PET/CT (Gallium-68 DOTATATE scan); Echocardiogram."
+  },
+  {
+    "id": "copper_deficiency_myelopathy",
+    "name": "Copper Deficiency Myeloneuropathy",
+    "icd10": "E61.0 / G32.89",
+    "discipline": "Hematology / Neurology",
+    "systemic_symptoms": "Progressive sensory ataxia, difficulty walking, paresthesias, cognitive slowing, depression, closely mimicking B12 deficiency (often induced by excessive zinc supplementation, gastric bypass surgery, or prolonged parenteral nutrition).",
+    "physical_signs": "Sensory ataxia, positive Romberg sign, loss of vibratory and position sense in lower extremities, spastic paraparesis, hyperreflexia, extensor plantars.",
+    "diagnostic_workup": "Serum copper level (markedly subnormal < 70 mcg/dL; often < 20); Serum ceruloplasmin (low); Serum zinc level (elevated in zinc-induced copper deficiency); Complete Blood Count (anemia and leukopenia / neutropenia, with ringed sideroblasts on bone marrow); Cervical/thoracic spine MRI (dorsal column T2 hyperintensity)."
+  },
+  {
+    "id": "ethylene_glycol_toxicity",
+    "name": "Toxic Alcohol Ingestion (Ethylene Glycol / Methanol)",
+    "icd10": "T51.1X1A / T51.2X1A",
+    "discipline": "Toxicology / Emergency Medicine",
+    "systemic_symptoms": "Apparent severe alcohol intoxication without ethanol breath odor, progressing to confusion, agitation, hallucinations, visual loss (snowfield vision in methanol), coma.",
+    "physical_signs": "Kussmaul breathing (severe metabolic acidosis), retinal edema, dilated unreactive pupils, flank pain, seizures.",
+    "diagnostic_workup": "Serum osmolality and calculated serum Osmolal Gap (> 10-15 mOsm/kg); Arterial Blood Gas (high anion gap metabolic acidosis); Serum ethylene glycol and methanol gas chromatography; Urinalysis demonstrating envelope- or needle-shaped calcium oxalate crystals under polarized microscopy; Wood's lamp inspection of urine (fluorescein additive)."
+  }
+]

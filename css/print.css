@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Clinical Print Stylesheet (8.5" x 11" Standard Medical Documentation)
+   ========================================================================== */
+
+@media print {
+  /* Hide all website chrome, navigation, search forms, and interactive controls */
+  .portal-header,
+  .search-hero-section,
+  .app-container,
+  .facets-sidebar,
+  .results-container,
+  .wiki-modal-backdrop,
+  .no-print,
+  .form-controls-bar,
+  .btn-close-modal {
+    display: none !important;
+  }
+
+  /* Make form modal backdrop transparent and static */
+  .form-modal-backdrop {
+    position: static !important;
+    background: none !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  .form-modal-container {
+    box-shadow: none !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.35 !important;
+  }
+
+  @page {
+    size: letter portrait;
+    margin: 0.5in 0.5in 0.5in 0.5in;
+  }
+
+  .printable-form {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .form-letterhead {
+    border-bottom: 2pt solid #0f2346 !important;
+    padding-bottom: 6pt !important;
+    margin-bottom: 10pt !important;
+  }
+
+  .letterhead-crest {
+    font-size: 8pt !important;
+    color: #0f2346 !important;
+  }
+
+  .form-title {
+    font-size: 13pt !important;
+    color: #0f2346 !important;
+    margin-bottom: 2pt !important;
+  }
+
+  .form-subtitle {
+    font-size: 8.5pt !important;
+    color: #444444 !important;
+  }
+
+  .form-grid-2col {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8pt !important;
+    margin-bottom: 8pt !important;
+  }
+
+  .form-field-group label {
+    font-size: 8pt !important;
+    font-weight: bold !important;
+  }
+
+  .form-input, .form-textarea {
+    border: none !important;
+    border-bottom: 0.75pt solid #000000 !important;
+    border-radius: 0 !important;
+    padding: 2pt 0 !important;
+    font-size: 9.5pt !important;
+    font-weight: 500 !important;
+    background: transparent !important;
+  }
+
+  .form-section-box {
+    background: #fafafa !important;
+    border: 0.75pt solid #bbbbbb !important;
+    padding: 6pt 8pt !important;
+    margin-bottom: 8pt !important;
+    break-inside: avoid;
+  }
+
+  .section-box-title {
+    font-size: 8pt !important;
+    font-weight: bold !important;
+    color: #0f2346 !important;
+  }
+
+  .section-field-static {
+    font-size: 9pt !important;
+    color: #111111 !important;
+  }
+
+  .form-checkbox-label {
+    font-size: 8.5pt !important;
+    line-height: 1.25 !important;
+  }
+
+  .form-signature-block {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 30pt !important;
+    margin-top: 20pt !important;
+    padding-top: 10pt !important;
+    break-inside: avoid;
+  }
+
+  .sig-underline {
+    border-bottom: 1pt solid #000000 !important;
+    height: 30pt !important;
+  }
+
+  .sig-caption {
+    font-size: 8pt !important;
+    font-weight: bold !important;
+    color: #222222 !important;
+  }
+
+  .form-notice-italic {
+    font-size: 7.5pt !important;
+    margin-top: 10pt !important;
+  }
+}

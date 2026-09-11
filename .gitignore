@@ -1,0 +1,13 @@
+# Dependencies & Build Output
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Windows temporary / local files
+.tempmediaStorage/
+extract_docx.ps1
+resize_logo.ps1
+extracted_revision.txt
+26.09.11*.docx
+~$*
