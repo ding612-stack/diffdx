@@ -105,7 +105,10 @@ const files = [
   'assets/logo.png',
   'assets/favicon.png',
   'assets/icon-192.png',
-  'assets/icon-512.png'
+  'assets/icon-512.png',
+  '404.html',
+  'robots.txt',
+  'sitemap.xml'
 ];
 
 let allExist = true;

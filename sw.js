@@ -1,7 +1,8 @@
-const CACHE_NAME = 'diffdx-pwa-v2.2';
+const CACHE_NAME = 'diffdx-pwa-v2.3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
+  './404.html',
   './manifest.json',
   './css/styles.css',
   './css/print.css',

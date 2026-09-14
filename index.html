@@ -5,11 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
   <meta name="theme-color" content="#0d233a">
-  <meta name="description" content="Academic search engine and clinical differential diagnosis engine mapping DSM psychiatric disorders to organic medical mimics.">
+  <meta name="description" content="Evidence-based clinical differential diagnosis desk reference and point-of-care referral portal mapping DSM-5-TR psychiatric disorders to multidisciplinary medical mimics.">
+  <meta name="keywords" content="DSM-5-TR, ICD-10, differential diagnosis, medical mimics, clinical referral, psychiatric evaluation, interprofessional healthcare">
+  <meta name="author" content="Clinical Differential Diagnosis Desk Reference">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Clinical & Medical Differential Diagnosis Desk Reference">
+  <meta property="og:description" content="Point-of-care diagnostic engine & interprofessional referral portal mapping 190 DSM-5-TR disorders against 106 medical mimics with zero-PHI privacy.">
+  <meta property="og:image" content="assets/logo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Clinical & Medical Differential Diagnosis Desk Reference">
+  <meta name="twitter:description" content="Point-of-care diagnostic engine & interprofessional referral portal mapping DSM-5-TR disorders against multidisciplinary medical mimics.">
+  <meta name="twitter:image" content="assets/logo.png">
+
+  <!-- Structured Data / Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Clinical & Medical Differential Diagnosis Desk Reference",
+    "description": "Evidence-based diagnostic differential engine mapping DSM-5-TR psychiatric criteria against organic medical mimics.",
+    "audience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Clinicians, Physicians, Mental Health Professionals"
+    },
+    "medicalSpecialty": [
+      "Psychiatry",
+      "Clinical Psychology",
+      "Neurology",
+      "Endocrinology",
+      "Internal Medicine"
+    ],
+    "about": {
+      "@type": "MedicalGuideline",
+      "name": "DSM-5-TR / ICD-10 Differential Diagnosis & Medical Rule-Out Reference"
+    }
+  }
+  </script>
+
   <title>Clinical Differential Diagnosis Desk Reference — Point-of-Care Portal</title>
   
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/print.css" media="print">
 </head>
@@ -27,15 +68,15 @@
       </div>
       <div class="portal-meta-badges">
         <span class="badge-version">DSM-5-TR / ICD-10 Aligned</span>
-        <button type="button" class="badge-disclaimer-btn" id="btn-open-disclaimer" title="View Clinical Decision Support Disclaimer">⚠️ Clinical Disclaimer</button>
+        <button type="button" class="badge-disclaimer-btn" id="btn-open-disclaimer" title="View Clinical Decision Support Disclaimer & HIPAA Privacy Policy">🛡️ Clinical &amp; Privacy Charter</button>
       </div>
     </div>
   </header>
 
   <!-- Academic Search Section (ERIC / PubMed / PsycINFO Style) -->
-  <section class="search-hero-section">
+  <section class="search-hero-section" aria-label="Clinical Differential Search">
     <div class="search-hero-container">
-      <form id="search-form" class="search-form-wrapper" onsubmit="return false;">
+      <form id="search-form" class="search-form-wrapper" onsubmit="return false;" role="search" aria-label="Disorder and medical mimic query search">
         <input 
           type="text" 
           id="search-input" 
@@ -43,15 +84,16 @@
           placeholder="Search symptoms, disorders, or medical mimics (e.g. fatigue AND weight NOT thyroid)..."
           autocomplete="off"
           spellcheck="false"
+          aria-label="Clinical diagnostic search query"
         >
-        <button type="button" id="btn-clear" class="btn-clear-search" title="Clear Search" style="display: none;">✕</button>
-        <button type="submit" id="btn-submit" class="btn-search-submit">
+        <button type="button" id="btn-clear" class="btn-clear-search" title="Clear Search" aria-label="Clear current search query" style="display: none;">✕</button>
+        <button type="submit" id="btn-submit" class="btn-search-submit" aria-label="Execute search">
           <span>Search</span>
         </button>
       </form>
 
       <!-- Search Syntax Hints & Chips Under Search Bar -->
-      <div class="search-hints-container">
+      <div class="search-hints-container" aria-label="Search syntax hints">
         <span class="hints-label">Search Hints:</span>
         <button type="button" class="hint-chip" data-query='fatigue AND "weight loss"'>fatigue AND "weight loss"</button>
         <button type="button" class="hint-chip" data-query='anhedonia OR insomnia NOT thyroid'>anhedonia OR insomnia NOT thyroid</button>
@@ -60,11 +102,11 @@
         <button type="button" class="hint-chip" data-query='mimic:pheochromocytoma'>mimic:pheochromocytoma</button>
         <button type="button" class="hint-chip" data-query='redflag:hyperthermia'>redflag:hyperthermia</button>
         
-        <span class="search-syntax-help-toggle" id="toggle-syntax-guide">ℹ️ Boolean Syntax Guide</span>
+        <span class="search-syntax-help-toggle" id="toggle-syntax-guide" role="button" tabindex="0" aria-expanded="false" aria-controls="syntax-guide-box">ℹ️ Boolean Syntax Guide</span>
       </div>
 
       <!-- Expandable Syntax Guide -->
-      <div class="search-syntax-guide" id="syntax-guide-box">
+      <div class="search-syntax-guide" id="syntax-guide-box" role="region" aria-label="Boolean Syntax Guide">
         <strong>Boolean &amp; Fielded Query Operators Supported:</strong>
         <div class="syntax-grid">
           <div class="syntax-item"><code>AND</code> — Both criteria required: <em>depression AND tremor</em></div>
@@ -85,39 +127,39 @@
   <!-- Main Content Layout -->
   <div class="app-container">
     <!-- Left Facets Sidebar -->
-    <aside class="facets-sidebar">
+    <aside class="facets-sidebar" aria-label="Database Filters">
       <div class="facets-header">
         <h3>Filter Database</h3>
-        <button type="button" class="btn-reset-filters" id="btn-reset-facets">Reset All</button>
+        <button type="button" class="btn-reset-filters" id="btn-reset-facets" aria-label="Reset all filters">Reset All</button>
       </div>
 
       <!-- Diagnostic Category Facet -->
       <div class="facet-group">
-        <div class="facet-title">Diagnostic Chapter</div>
-        <select id="facet-category" class="facet-select">
+        <label for="facet-category" class="facet-title">Diagnostic Chapter</label>
+        <select id="facet-category" class="facet-select" aria-label="Filter by Diagnostic Chapter">
           <option value="all">All Diagnostic Chapters</option>
         </select>
       </div>
 
       <!-- Medical Discipline Facet -->
       <div class="facet-group">
-        <div class="facet-title">Medical Mimic Discipline</div>
-        <select id="facet-discipline" class="facet-select">
+        <label for="facet-discipline" class="facet-title">Medical Mimic Discipline</label>
+        <select id="facet-discipline" class="facet-select" aria-label="Filter by Medical Mimic Discipline">
           <option value="all">All Medical Disciplines</option>
         </select>
       </div>
     </aside>
 
     <!-- Right Results Stream -->
-    <main class="results-container">
+    <main class="results-container" aria-label="Differential Diagnostic Results">
       <div class="results-meta-bar">
-        <div class="results-count-text" id="results-count-label">
+        <div class="results-count-text" id="results-count-label" aria-live="polite" aria-atomic="true">
           Loading diagnostic database...
         </div>
       </div>
 
       <!-- List of Result Cards -->
-      <div class="results-list" id="results-list">
+      <div class="results-list" id="results-list" role="feed" aria-busy="false" aria-label="Diagnostic Differential Cards">
         <!-- Injected via JavaScript -->
       </div>
     </main>
@@ -161,26 +203,38 @@
   </div>
 
   <!-- Clinical Decision Support & Terms Disclaimer Modal -->
-  <div class="wiki-modal-backdrop" id="disclaimer-modal-backdrop" role="dialog" aria-modal="true">
-    <div class="wiki-modal-window" style="max-width: 680px;">
+  <div class="wiki-modal-backdrop" id="disclaimer-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+    <div class="wiki-modal-window" style="max-width: 720px;">
       <div class="wiki-modal-topbar" style="background: #0d233a;">
-        <div class="wiki-modal-topbar-title">
-          <span>⚖️ Clinical Decision Support &amp; Educational Use Disclaimer</span>
+        <div class="wiki-modal-topbar-title" id="disclaimer-title">
+          <span>🛡️ Clinical Decision Support &amp; HIPAA Privacy Policy</span>
         </div>
-        <button type="button" class="btn-close-modal" id="btn-close-disclaimer" title="Close Disclaimer">✕</button>
+        <button type="button" class="btn-close-modal" id="btn-close-disclaimer" title="Close Disclaimer" aria-label="Close disclaimer dialog">✕</button>
       </div>
       <div class="wiki-modal-scroll-area" style="padding: 24px 28px;">
         <div class="disclaimer-content-block">
-          <h3 style="color: #0f2346; margin-bottom: 8px;">Professional Reference Standards</h3>
-          <p style="font-size: 0.9rem; color: #334155; line-height: 1.55; margin-bottom: 12px;">
-            The <strong>Clinical &amp; Medical Differential Diagnosis Desk Reference PWA</strong> is an independent clinical decision-support and educational reference tool designed for licensed mental health professionals, physicians, medical trainees, and clinical researchers.
+          <h3 style="color: #0f2346; margin-bottom: 8px;">1. Professional Reference &amp; Clinical Decision Support Standards</h3>
+          <p style="font-size: 0.88rem; color: #334155; line-height: 1.55; margin-bottom: 12px;">
+            The <strong>Clinical &amp; Medical Differential Diagnosis Desk Reference PWA</strong> is an independent clinical decision-support and educational reference tool designed for licensed mental health professionals, physicians, clinical nurse specialists, medical trainees, and multidisciplinary researchers.
           </p>
-          <p style="font-size: 0.9rem; color: #334155; line-height: 1.55; margin-bottom: 12px;">
-            <strong>Clinician Responsibility:</strong> Diagnostic formulations, laboratory order selection, emergency transfer directives, and treatment decisions remain the exclusive professional responsibility of the attending licensed clinician. This reference tool is designed to assist in counteracting <em>diagnostic overshadowing</em> by systematically identifying interdisciplinary medical mimics, but does not substitute for formal medical consultation, physical examination, or emergency department clearance protocols.
+          <p style="font-size: 0.88rem; color: #334155; line-height: 1.55; margin-bottom: 16px;">
+            <strong>Clinician Responsibility:</strong> Diagnostic formulations, laboratory order selection, emergency transfer directives, and treatment decisions remain the exclusive professional responsibility of the attending licensed clinician. This reference tool is designed to assist in counteracting <em>diagnostic overshadowing</em> by systematically identifying interdisciplinary medical mimics, but does not substitute for formal medical consultation, in-person physical examination, or emergency department clearance protocols.
           </p>
-          <p style="font-size: 0.9rem; color: #334155; line-height: 1.55; margin-bottom: 18px;">
-            <strong>Zero-PHI Privacy Guarantee:</strong> All patient data entered into the referral forms executes 100% locally within volatile browser RAM and is never stored, tracked, or transmitted across any network.
-          </p>
+
+          <h3 style="color: #0f2346; margin-bottom: 8px; border-top: 1px solid #e2e8f0; padding-top: 14px;">2. Zero-PHI Privacy Charter &amp; HIPAA Compliance Declaration</h3>
+          <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 12px 14px; margin-bottom: 14px;">
+            <div style="font-size: 0.88rem; font-weight: 700; color: #166534; margin-bottom: 4px;">🔒 100% In-Browser Volatile Memory Execution</div>
+            <p style="font-size: 0.84rem; color: #15803d; line-height: 1.5; margin: 0;">
+              This web application operates under a strict <strong>Zero-PHI (Protected Health Information) architecture</strong>. No data entered into this portal is ever transmitted across the internet, logged on remote servers, or stored in persistent browser cookies.
+            </p>
+          </div>
+
+          <ul style="font-size: 0.86rem; color: #334155; line-height: 1.6; margin-left: 20px; margin-bottom: 18px;">
+            <li><strong>No Tracking or Analytics:</strong> There are no Google Analytics, third-party marketing tags, pixels, or trackers of any kind.</li>
+            <li><strong>Local RAM Isolation:</strong> Patient identifiers, symptoms, and clinician notes entered into the referral forms exist exclusively in your computer or mobile device's temporary memory (RAM) and evaporate completely upon closing or refreshing the tab.</li>
+            <li><strong>Offline-First Storage:</strong> Diagnostic databases and monographs are cached locally via modern Service Worker technology, allowing complete functionality even in airplane mode or secure healthcare facilities with disconnected Wi-Fi.</li>
+            <li><strong>Compliance:</strong> Designed in accordance with HIPAA Security and Privacy Rules (§164.312) regarding technical safeguards for electronic health information transmission.</li>
+          </ul>
           
           <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #e2e8f0; padding-top: 16px; flex-wrap: wrap; gap: 12px;">
             <label style="font-size: 0.82rem; color: #64748b; cursor: pointer; display: flex; align-items: center; gap: 6px;">

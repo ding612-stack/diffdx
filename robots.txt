@@ -1,0 +1,5 @@
+﻿# Clinical Differential Diagnosis Desk Reference PWA
+User-agent: *
+Allow: /
+
+Sitemap: sitemap.xml

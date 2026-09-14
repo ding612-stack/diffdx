@@ -430,6 +430,44 @@ class FormDrawerManager {
   }
 
   /**
+   * Validate key clinical referral fields with non-blocking gentle guidance
+   */
+  validateForm(container) {
+    const patientInput = container.querySelector('#patient_name');
+    const clinicianInput = container.querySelector('#clinician_name');
+    const missing = [];
+
+    // Remove any previous error highlights
+    container.querySelectorAll('.form-field-error').forEach(el => {
+      el.classList.remove('form-field-error');
+    });
+    const existingWarning = container.querySelector('.form-validation-warning');
+    if (existingWarning) existingWarning.remove();
+
+    if (patientInput && !patientInput.value.trim()) {
+      missing.push('Patient Name / MRN');
+      patientInput.classList.add('form-field-error');
+    }
+    if (clinicianInput && !clinicianInput.value.trim()) {
+      missing.push('Referring Clinician Name');
+      clinicianInput.classList.add('form-field-error');
+    }
+
+    if (missing.length > 0) {
+      const warningDiv = document.createElement('div');
+      warningDiv.className = 'form-validation-warning';
+      warningDiv.innerHTML = `
+        <span style="font-size: 13px; color: #b45309; display: flex; align-items: center; gap: 6px;">
+          ⚠️ <strong>Clinical Notice:</strong> ${missing.join(' and ')} left blank. Proceeding with de-identified template.
+        </span>
+      `;
+      const controlsBar = container.querySelector('.form-controls-bar');
+      if (controlsBar) controlsBar.parentNode.insertBefore(warningDiv, controlsBar);
+    }
+    return true;
+  }
+
+  /**
    * Wire interactive events inside modal
    */
   attachFormEvents(container) {
@@ -439,6 +477,7 @@ class FormDrawerManager {
 
     if (printBtn) {
       printBtn.addEventListener('click', () => {
+        this.validateForm(container);
         window.print();
       });
     }
@@ -451,6 +490,7 @@ class FormDrawerManager {
 
     if (copyBtn) {
       copyBtn.addEventListener('click', () => {
+        this.validateForm(container);
         this.copyFormToClipboard(container);
       });
     }
